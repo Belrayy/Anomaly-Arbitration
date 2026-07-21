@@ -1,7 +1,7 @@
 import pandas as pd
 
-input_file = "../data/raw/creditcard.csv"
-output_file = "../data/raw/creditcard_cleaned.csv"
+input_file = "../data/split/creditcard_train.csv"
+output_file = "../data/split/creditcard_train.csv"
 
 df = pd.read_csv(input_file)
 
@@ -11,7 +11,7 @@ df.drop_duplicates(inplace=True)
 
 df.dropna(inplace=True)
 
-df.drop(columns=["nameOrig", "nameDest", "isFraud" , "isFlaggedFraud"], inplace=True)
+df.drop(columns=["nameOrig", "nameDest", "isFraud" , "isFlaggedFraud"], inplace=True) ## df.drop(columns=["nameOrig", "nameDest", "isFraud" , "isFlaggedFraud"], inplace=True)
 
 df = pd.get_dummies(df, columns=["type"], dtype=int)
 
