@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-input_file = "school.csv"
-output_file = "school_cleaned.csv"
+input_file = "../data/unfit_data/school_unfit.csv"
+output_file = "../data/unfit_data/school_cleaned.csv"
 
 df = pd.read_csv(input_file)
 

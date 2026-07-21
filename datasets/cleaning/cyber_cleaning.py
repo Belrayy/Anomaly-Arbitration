@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-input_file = "cyber.csv"
-output_file = "cyber_cleaned.csv"
+input_file = "../data/unfit_data/cyber_unfit.csv"
+output_file = "../data/unfit_data/cyber_cleaned.csv"
 
 df = pd.read_csv(input_file, low_memory=False)
 
