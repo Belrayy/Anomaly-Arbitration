@@ -1,9 +1,9 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-input_file = "../data/school_dataset.csv"
-train_file = "../data/clean/train.csv"
-test_file = "../data/clean/test.csv"
+input_file = "../data/clean/creditcard_cleaned.csv"
+train_file = "../data/clean/creditcard_train.csv"
+test_file = "../data/clean/creditcard_test.csv"
 
 df = pd.read_csv(input_file)
 
