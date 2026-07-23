@@ -1,7 +1,7 @@
 import pandas as pd
 
-input_file = "../data/split/creditcard_train.csv"
-output_file = "../data/split/creditcard_train.csv"
+input_file = "../data/split/creditcard.csv"
+output_file = "../data/split/creditcard_cleaned.csv"
 
 df = pd.read_csv(input_file)
 
