@@ -1,3 +1,4 @@
 .env
 datasets/data
 models/training/isolation_forest/reports
+models/training/local_outlier_factor/models
