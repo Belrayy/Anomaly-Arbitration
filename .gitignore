@@ -2,3 +2,7 @@
 datasets/data
 models/training/isolation_forest/reports
 models/training/local_outlier_factor/models
+models/training/local_outlier_factor/creditcard/reports
+models/training/svm/models
+models/training/svm/creditcard/models
+models/training/svm/creditcard/reports
