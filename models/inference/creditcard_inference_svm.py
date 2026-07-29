@@ -7,7 +7,7 @@ import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parents[1]
-MODEL_PATH = PROJECT_ROOT / "models" / "training" / "svm" / "models" / "one_class_svm_creditcard.pkl"
+MODEL_PATH = PROJECT_ROOT / "models" / "training" / "svm" / "creditcard"/ "models" / "one_class_svm_creditcard.pkl"
 INPUT_FILE = PROJECT_ROOT / "datasets" / "data" / "split" / "creditcard_inference.csv"
 OUTPUT_FILE = BASE_DIR / "predictions" /"predictions_creditcard_one_class_svm.json"
 
