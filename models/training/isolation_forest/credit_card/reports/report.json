@@ -1,0 +1,43 @@
+{
+  "model_name": "Isolation Forest",
+  "model_path": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\models\\isolation_forest.pkl",
+  "dataset_path": "D:\\Emsi\\s8\\Stage\\projet\\datasets\\data\\split\\creditcard_test.csv",
+  "label_column": "isFraud",
+  "feature_columns": [
+    "step",
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "type_CASH_IN",
+    "type_CASH_OUT",
+    "type_DEBIT",
+    "type_PAYMENT",
+    "type_TRANSFER"
+  ],
+  "metrics": {
+    "accuracy": 0.878314,
+    "precision": 0.005873,
+    "recall": 0.568693,
+    "f1_score": 0.011625,
+    "roc_auc": 0.83447,
+    "pr_auc": 0.006483,
+    "confusion_matrix": {
+      "tn": 837574,
+      "fp": 115618,
+      "fn": 518,
+      "tp": 683
+    },
+    "prediction_time_seconds": 15.284412
+  },
+  "predictions_file": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\reports\\predictions.csv",
+  "plots": {
+    "confusion_matrix": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\reports\\images\\confusion_matrix.png",
+    "roc_curve": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\reports\\images\\roc_curve.png",
+    "pr_curve": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\reports\\images\\pr_curve.png",
+    "score_distribution": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\reports\\images\\score_distribution.png",
+    "prediction_distribution": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\reports\\images\\prediction_distribution.png",
+    "amount_vs_anomaly_score": "D:\\Emsi\\s8\\Stage\\projet\\models\\training\\isolation_forest\\reports\\images\\amount_vs_anomaly_score.png"
+  }
+}
