@@ -6,3 +6,4 @@ models/training/local_outlier_factor/creditcard/reports
 models/training/svm/models
 models/training/svm/creditcard/models
 models/training/svm/creditcard/reports
+reports/credit_card/output
