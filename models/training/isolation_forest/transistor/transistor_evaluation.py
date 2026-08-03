@@ -3,6 +3,7 @@ import os
 import time
 import warnings
 from pathlib import Path
+from xml.parsers.expat import model
 import joblib
 import matplotlib
 matplotlib.use("Agg")
@@ -24,10 +25,10 @@ from sklearn.metrics import (
 warnings.filterwarnings("ignore")
 
 BASE_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = BASE_DIR.parents[2]
+PROJECT_ROOT = BASE_DIR.parents[3]
 
-MODEL_PATH = BASE_DIR / "models" / "isolation_forest.pkl"
-TEST_PATH = PROJECT_ROOT / "datasets" / "data" / "split" / "creditcard_test.csv"
+MODEL_PATH = BASE_DIR.parent / "models" / "isolation_forest_transistor.pkl"
+TEST_PATH = PROJECT_ROOT / "datasets" / "data" / "split" / "transistor_test.csv"
 
 REPORTS_DIR = BASE_DIR / "reports"
 IMAGES_DIR = REPORTS_DIR / "images"
@@ -35,7 +36,19 @@ PREDICTIONS_FILE = REPORTS_DIR / "predictions.csv"
 REPORT_FILE = REPORTS_DIR / "report.json"
 
 MODEL_NAME = "Isolation Forest"
-LABEL_COLUMN_CANDIDATES = ["label", "target", "class", "Class", "y", "is_fraud", "is_anomaly", "anomaly"]
+LABEL_COLUMN_CANDIDATES = [
+    "Pass/Fail",
+    "label",
+    "target",
+    "class",
+    "Class",
+    "y",
+    "isFraud",
+    "is_fraud",
+    "Label",
+    "anomaly",
+    "is_anomaly"
+]
 
 
 def normalize_labels(y):
@@ -194,15 +207,18 @@ def evaluate_model(model_path, test_path, model_name, reports_dir, images_dir, p
     os.makedirs(images_dir, exist_ok=True)
 
     print(f"Loading model from {model_path}...")
-    model = joblib.load(model_path)
-
+    saved = joblib.load(model_path)
+    pipeline = saved["pipeline"]
+    expected_features = saved["features"]
     print(f"Loading test dataset from {test_path}...")
     df = pd.read_csv(test_path, low_memory=False)
 
     if df.empty:
         raise ValueError("The test dataset is empty")
 
-    expected_features = list(getattr(model, "feature_names_in_", []))
+    saved = joblib.load(model_path)
+    pipeline = saved["pipeline"]
+    expected_features = saved["features"]
     if not expected_features:
         expected_features = [
             col
@@ -223,8 +239,8 @@ def evaluate_model(model_path, test_path, model_name, reports_dir, images_dir, p
     print(f"Label column: {label_column}")
 
     start_time = time.perf_counter()
-    predictions = model.predict(X)
-    anomaly_scores = get_anomaly_scores(model, X)
+    predictions = pipeline.predict(X)
+    anomaly_scores = get_anomaly_scores(pipeline, X)
     prediction_time = time.perf_counter() - start_time
 
     predicted_anomaly = (np.asarray(predictions) == -1)

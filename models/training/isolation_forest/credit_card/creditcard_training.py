@@ -7,12 +7,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.ensemble import IsolationForest
 
 
-# Use the cleaned file (already one-hot encoded, no target column)
-TRAIN_FILE = "../../../datasets/data/split/creditcard_train.csv"
+TRAIN_FILE = "../../../../datasets/data/split/creditcard_train.csv"
 
-MODEL_DIR = "models"
+MODEL_DIR = "../models"
 
-MODEL_FILE = os.path.join(MODEL_DIR, "isolation_forest.pkl")
+MODEL_FILE = os.path.join(MODEL_DIR, "isolation_forest_creditcard.pkl")
 
 RANDOM_STATE = 42
 

@@ -1,9 +1,11 @@
 .env
 datasets/data
-models/training/isolation_forest/reports
+models/training/isolation_forest/creditcard/reports
 models/training/local_outlier_factor/models
 models/training/local_outlier_factor/creditcard/reports
 models/training/svm/models
 models/training/svm/creditcard/models
 models/training/svm/creditcard/reports
 reports/credit_card/output
+models/training/isolation_forest/transistor/reports
+models/training/isolation_forest/models
