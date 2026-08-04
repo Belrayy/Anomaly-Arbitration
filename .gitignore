@@ -9,3 +9,5 @@ models/training/svm/creditcard/reports
 reports/credit_card/output
 models/training/isolation_forest/transistor/reports
 models/training/isolation_forest/models
+models/training/local_outlier_factor/transistor/reports
+models/training/svm/transistor/reports
