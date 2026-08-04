@@ -1,0 +1,3922 @@
+[
+  {
+    "row_id": 0,
+    "prediction": 0,
+    "anomaly_score": -0.08691100902330517
+  },
+  {
+    "row_id": 1,
+    "prediction": 0,
+    "anomaly_score": -0.10861512107024673
+  },
+  {
+    "row_id": 2,
+    "prediction": 0,
+    "anomaly_score": -0.10961719110932083
+  },
+  {
+    "row_id": 3,
+    "prediction": 0,
+    "anomaly_score": -0.09077703184129426
+  },
+  {
+    "row_id": 4,
+    "prediction": 0,
+    "anomaly_score": -0.08569549166588292
+  },
+  {
+    "row_id": 5,
+    "prediction": 0,
+    "anomaly_score": -0.07059388329766142
+  },
+  {
+    "row_id": 6,
+    "prediction": 0,
+    "anomaly_score": -0.11881796604793676
+  },
+  {
+    "row_id": 7,
+    "prediction": 0,
+    "anomaly_score": -0.11431377267920295
+  },
+  {
+    "row_id": 8,
+    "prediction": 0,
+    "anomaly_score": -0.11611890549304454
+  },
+  {
+    "row_id": 9,
+    "prediction": 0,
+    "anomaly_score": -0.10609495257072721
+  },
+  {
+    "row_id": 10,
+    "prediction": 0,
+    "anomaly_score": -0.10372930001515468
+  },
+  {
+    "row_id": 11,
+    "prediction": 0,
+    "anomaly_score": -0.11052077755700412
+  },
+  {
+    "row_id": 12,
+    "prediction": 0,
+    "anomaly_score": -0.11349789854000608
+  },
+  {
+    "row_id": 13,
+    "prediction": 0,
+    "anomaly_score": -0.09936534921204476
+  },
+  {
+    "row_id": 14,
+    "prediction": 0,
+    "anomaly_score": -0.10007683594073674
+  },
+  {
+    "row_id": 15,
+    "prediction": 0,
+    "anomaly_score": -0.10920107520746491
+  },
+  {
+    "row_id": 16,
+    "prediction": 0,
+    "anomaly_score": -0.07923126807147757
+  },
+  {
+    "row_id": 17,
+    "prediction": 0,
+    "anomaly_score": -0.10110610268003789
+  },
+  {
+    "row_id": 18,
+    "prediction": 0,
+    "anomaly_score": -0.08084891581139103
+  },
+  {
+    "row_id": 19,
+    "prediction": 0,
+    "anomaly_score": -0.09305140004563883
+  },
+  {
+    "row_id": 20,
+    "prediction": 0,
+    "anomaly_score": -0.03257105048762049
+  },
+  {
+    "row_id": 21,
+    "prediction": 0,
+    "anomaly_score": -0.07924516904394935
+  },
+  {
+    "row_id": 22,
+    "prediction": 0,
+    "anomaly_score": -0.10570451550287485
+  },
+  {
+    "row_id": 23,
+    "prediction": 0,
+    "anomaly_score": -0.09771949541310004
+  },
+  {
+    "row_id": 24,
+    "prediction": 0,
+    "anomaly_score": -0.11059937427089472
+  },
+  {
+    "row_id": 25,
+    "prediction": 0,
+    "anomaly_score": -0.07635690011505608
+  },
+  {
+    "row_id": 26,
+    "prediction": 0,
+    "anomaly_score": -0.08584024283276631
+  },
+  {
+    "row_id": 27,
+    "prediction": 0,
+    "anomaly_score": -0.11540707505767939
+  },
+  {
+    "row_id": 28,
+    "prediction": 0,
+    "anomaly_score": -0.10962707758815499
+  },
+  {
+    "row_id": 29,
+    "prediction": 0,
+    "anomaly_score": -0.11055254577628415
+  },
+  {
+    "row_id": 30,
+    "prediction": 0,
+    "anomaly_score": -0.08604407987045348
+  },
+  {
+    "row_id": 31,
+    "prediction": 0,
+    "anomaly_score": -0.08585914445647519
+  },
+  {
+    "row_id": 32,
+    "prediction": 0,
+    "anomaly_score": -0.12180191508259969
+  },
+  {
+    "row_id": 33,
+    "prediction": 0,
+    "anomaly_score": -0.07883043482216179
+  },
+  {
+    "row_id": 34,
+    "prediction": 0,
+    "anomaly_score": -0.1255350969069568
+  },
+  {
+    "row_id": 35,
+    "prediction": 0,
+    "anomaly_score": -0.10728073841056607
+  },
+  {
+    "row_id": 36,
+    "prediction": 0,
+    "anomaly_score": -0.0826572679797612
+  },
+  {
+    "row_id": 37,
+    "prediction": 0,
+    "anomaly_score": -0.10802177746155717
+  },
+  {
+    "row_id": 38,
+    "prediction": 0,
+    "anomaly_score": -0.09807966400095625
+  },
+  {
+    "row_id": 39,
+    "prediction": 0,
+    "anomaly_score": -0.0814061765505979
+  },
+  {
+    "row_id": 40,
+    "prediction": 0,
+    "anomaly_score": -0.08819303025906505
+  },
+  {
+    "row_id": 41,
+    "prediction": 0,
+    "anomaly_score": -0.09218816193271467
+  },
+  {
+    "row_id": 42,
+    "prediction": 0,
+    "anomaly_score": -0.08148819131590934
+  },
+  {
+    "row_id": 43,
+    "prediction": 0,
+    "anomaly_score": -0.08655606216466916
+  },
+  {
+    "row_id": 44,
+    "prediction": 0,
+    "anomaly_score": -0.10354943426903512
+  },
+  {
+    "row_id": 45,
+    "prediction": 0,
+    "anomaly_score": -0.1088662197863342
+  },
+  {
+    "row_id": 46,
+    "prediction": 0,
+    "anomaly_score": -0.0473814109002792
+  },
+  {
+    "row_id": 47,
+    "prediction": 0,
+    "anomaly_score": -0.09775437566300976
+  },
+  {
+    "row_id": 48,
+    "prediction": 0,
+    "anomaly_score": -0.10786157474755076
+  },
+  {
+    "row_id": 49,
+    "prediction": 0,
+    "anomaly_score": -0.09656269119096489
+  },
+  {
+    "row_id": 50,
+    "prediction": 0,
+    "anomaly_score": -0.10544890645619748
+  },
+  {
+    "row_id": 51,
+    "prediction": 0,
+    "anomaly_score": -0.10304290730807214
+  },
+  {
+    "row_id": 52,
+    "prediction": 0,
+    "anomaly_score": -0.0483064628152155
+  },
+  {
+    "row_id": 53,
+    "prediction": 0,
+    "anomaly_score": -0.10307951047383701
+  },
+  {
+    "row_id": 54,
+    "prediction": 0,
+    "anomaly_score": -0.039729906961135986
+  },
+  {
+    "row_id": 55,
+    "prediction": 0,
+    "anomaly_score": -0.12208735880419047
+  },
+  {
+    "row_id": 56,
+    "prediction": 0,
+    "anomaly_score": -0.07930876930415992
+  },
+  {
+    "row_id": 57,
+    "prediction": 0,
+    "anomaly_score": -0.10858135058714358
+  },
+  {
+    "row_id": 58,
+    "prediction": 0,
+    "anomaly_score": -0.0943092835282065
+  },
+  {
+    "row_id": 59,
+    "prediction": 0,
+    "anomaly_score": -0.08984144333012656
+  },
+  {
+    "row_id": 60,
+    "prediction": 0,
+    "anomaly_score": -0.11089677512626755
+  },
+  {
+    "row_id": 61,
+    "prediction": 0,
+    "anomaly_score": -0.10456463229277779
+  },
+  {
+    "row_id": 62,
+    "prediction": 0,
+    "anomaly_score": -0.08811446530268968
+  },
+  {
+    "row_id": 63,
+    "prediction": 0,
+    "anomaly_score": -0.11204134196988375
+  },
+  {
+    "row_id": 64,
+    "prediction": 0,
+    "anomaly_score": -0.09556270467824252
+  },
+  {
+    "row_id": 65,
+    "prediction": 0,
+    "anomaly_score": -0.06998440320592642
+  },
+  {
+    "row_id": 66,
+    "prediction": 0,
+    "anomaly_score": -0.10644332810991408
+  },
+  {
+    "row_id": 67,
+    "prediction": 0,
+    "anomaly_score": -0.09249767042085977
+  },
+  {
+    "row_id": 68,
+    "prediction": 0,
+    "anomaly_score": -0.12409049973559627
+  },
+  {
+    "row_id": 69,
+    "prediction": 0,
+    "anomaly_score": -0.09385492460277689
+  },
+  {
+    "row_id": 70,
+    "prediction": 0,
+    "anomaly_score": -0.1155906670856392
+  },
+  {
+    "row_id": 71,
+    "prediction": 0,
+    "anomaly_score": -0.0788018925612099
+  },
+  {
+    "row_id": 72,
+    "prediction": 0,
+    "anomaly_score": -0.11681002921723366
+  },
+  {
+    "row_id": 73,
+    "prediction": 0,
+    "anomaly_score": -0.09549176606237941
+  },
+  {
+    "row_id": 74,
+    "prediction": 0,
+    "anomaly_score": -0.09313249112975658
+  },
+  {
+    "row_id": 75,
+    "prediction": 0,
+    "anomaly_score": -0.11822864356617918
+  },
+  {
+    "row_id": 76,
+    "prediction": 0,
+    "anomaly_score": -0.08293644238244702
+  },
+  {
+    "row_id": 77,
+    "prediction": 0,
+    "anomaly_score": -0.09084333197341438
+  },
+  {
+    "row_id": 78,
+    "prediction": 0,
+    "anomaly_score": -0.10677233141461379
+  },
+  {
+    "row_id": 79,
+    "prediction": 0,
+    "anomaly_score": -0.026669528688840816
+  },
+  {
+    "row_id": 80,
+    "prediction": 0,
+    "anomaly_score": -0.0751561911930152
+  },
+  {
+    "row_id": 81,
+    "prediction": 0,
+    "anomaly_score": -0.11143738633242406
+  },
+  {
+    "row_id": 82,
+    "prediction": 0,
+    "anomaly_score": -0.09057936169098307
+  },
+  {
+    "row_id": 83,
+    "prediction": 0,
+    "anomaly_score": -0.11895412146624013
+  },
+  {
+    "row_id": 84,
+    "prediction": 0,
+    "anomaly_score": -0.10716659375936849
+  },
+  {
+    "row_id": 85,
+    "prediction": 0,
+    "anomaly_score": -0.09790308202144332
+  },
+  {
+    "row_id": 86,
+    "prediction": 0,
+    "anomaly_score": -0.10899227430017505
+  },
+  {
+    "row_id": 87,
+    "prediction": 0,
+    "anomaly_score": -0.10402285671234585
+  },
+  {
+    "row_id": 88,
+    "prediction": 0,
+    "anomaly_score": -0.10605486942890596
+  },
+  {
+    "row_id": 89,
+    "prediction": 0,
+    "anomaly_score": -0.1032820944745475
+  },
+  {
+    "row_id": 90,
+    "prediction": 1,
+    "anomaly_score": 0.002184326526656677
+  },
+  {
+    "row_id": 91,
+    "prediction": 0,
+    "anomaly_score": -0.10976505389323232
+  },
+  {
+    "row_id": 92,
+    "prediction": 0,
+    "anomaly_score": -0.09151195621591701
+  },
+  {
+    "row_id": 93,
+    "prediction": 0,
+    "anomaly_score": -0.03954979481771648
+  },
+  {
+    "row_id": 94,
+    "prediction": 0,
+    "anomaly_score": -0.08271545919377465
+  },
+  {
+    "row_id": 95,
+    "prediction": 0,
+    "anomaly_score": -0.11349082504102881
+  },
+  {
+    "row_id": 96,
+    "prediction": 0,
+    "anomaly_score": -0.0746794332823203
+  },
+  {
+    "row_id": 97,
+    "prediction": 0,
+    "anomaly_score": -0.07742577890517022
+  },
+  {
+    "row_id": 98,
+    "prediction": 0,
+    "anomaly_score": -0.09036530549851313
+  },
+  {
+    "row_id": 99,
+    "prediction": 0,
+    "anomaly_score": -0.11583271937667122
+  },
+  {
+    "row_id": 100,
+    "prediction": 0,
+    "anomaly_score": -0.1159914292900886
+  },
+  {
+    "row_id": 101,
+    "prediction": 0,
+    "anomaly_score": -0.10993478675270268
+  },
+  {
+    "row_id": 102,
+    "prediction": 0,
+    "anomaly_score": -0.11019859899796713
+  },
+  {
+    "row_id": 103,
+    "prediction": 0,
+    "anomaly_score": -0.09533582849924788
+  },
+  {
+    "row_id": 104,
+    "prediction": 0,
+    "anomaly_score": -0.11305581380485696
+  },
+  {
+    "row_id": 105,
+    "prediction": 0,
+    "anomaly_score": -0.11640163524967417
+  },
+  {
+    "row_id": 106,
+    "prediction": 0,
+    "anomaly_score": -0.11436630902683309
+  },
+  {
+    "row_id": 107,
+    "prediction": 0,
+    "anomaly_score": -0.08782548886323105
+  },
+  {
+    "row_id": 108,
+    "prediction": 0,
+    "anomaly_score": -0.09375622531436956
+  },
+  {
+    "row_id": 109,
+    "prediction": 0,
+    "anomaly_score": -0.09474370454216036
+  },
+  {
+    "row_id": 110,
+    "prediction": 0,
+    "anomaly_score": -0.09846401516551673
+  },
+  {
+    "row_id": 111,
+    "prediction": 0,
+    "anomaly_score": -0.10061122805329853
+  },
+  {
+    "row_id": 112,
+    "prediction": 0,
+    "anomaly_score": -0.0939611534786658
+  },
+  {
+    "row_id": 113,
+    "prediction": 0,
+    "anomaly_score": -0.10160321860832983
+  },
+  {
+    "row_id": 114,
+    "prediction": 0,
+    "anomaly_score": -0.09847160735485322
+  },
+  {
+    "row_id": 115,
+    "prediction": 0,
+    "anomaly_score": -0.09989662713921849
+  },
+  {
+    "row_id": 116,
+    "prediction": 0,
+    "anomaly_score": -0.10966667904191918
+  },
+  {
+    "row_id": 117,
+    "prediction": 0,
+    "anomaly_score": -0.1091537050022039
+  },
+  {
+    "row_id": 118,
+    "prediction": 0,
+    "anomaly_score": -0.11233622957106659
+  },
+  {
+    "row_id": 119,
+    "prediction": 0,
+    "anomaly_score": -0.10680174768253409
+  },
+  {
+    "row_id": 120,
+    "prediction": 0,
+    "anomaly_score": -0.1229517405369212
+  },
+  {
+    "row_id": 121,
+    "prediction": 0,
+    "anomaly_score": -0.08119582737954067
+  },
+  {
+    "row_id": 122,
+    "prediction": 0,
+    "anomaly_score": -0.08961489974245018
+  },
+  {
+    "row_id": 123,
+    "prediction": 0,
+    "anomaly_score": -0.09766558977896139
+  },
+  {
+    "row_id": 124,
+    "prediction": 0,
+    "anomaly_score": -0.1116096884878019
+  },
+  {
+    "row_id": 125,
+    "prediction": 0,
+    "anomaly_score": -0.10233126864406022
+  },
+  {
+    "row_id": 126,
+    "prediction": 0,
+    "anomaly_score": -0.07256544563374273
+  },
+  {
+    "row_id": 127,
+    "prediction": 0,
+    "anomaly_score": -0.09686766851516537
+  },
+  {
+    "row_id": 128,
+    "prediction": 0,
+    "anomaly_score": -0.10307948862908017
+  },
+  {
+    "row_id": 129,
+    "prediction": 0,
+    "anomaly_score": -0.09576925366445721
+  },
+  {
+    "row_id": 130,
+    "prediction": 0,
+    "anomaly_score": -0.11371059979114728
+  },
+  {
+    "row_id": 131,
+    "prediction": 0,
+    "anomaly_score": -0.09105405113090731
+  },
+  {
+    "row_id": 132,
+    "prediction": 0,
+    "anomaly_score": -0.11399183460221596
+  },
+  {
+    "row_id": 133,
+    "prediction": 0,
+    "anomaly_score": -0.08447126019871287
+  },
+  {
+    "row_id": 134,
+    "prediction": 0,
+    "anomaly_score": -0.0962800452251042
+  },
+  {
+    "row_id": 135,
+    "prediction": 0,
+    "anomaly_score": -0.10002735838425003
+  },
+  {
+    "row_id": 136,
+    "prediction": 0,
+    "anomaly_score": -0.11351206258980329
+  },
+  {
+    "row_id": 137,
+    "prediction": 0,
+    "anomaly_score": -0.10167459868112233
+  },
+  {
+    "row_id": 138,
+    "prediction": 0,
+    "anomaly_score": -0.11239583398077796
+  },
+  {
+    "row_id": 139,
+    "prediction": 0,
+    "anomaly_score": -0.07085839215218709
+  },
+  {
+    "row_id": 140,
+    "prediction": 0,
+    "anomaly_score": -0.08874132965797993
+  },
+  {
+    "row_id": 141,
+    "prediction": 0,
+    "anomaly_score": -0.08934394853806088
+  },
+  {
+    "row_id": 142,
+    "prediction": 0,
+    "anomaly_score": -0.0968296207650376
+  },
+  {
+    "row_id": 143,
+    "prediction": 0,
+    "anomaly_score": -0.10212182736334979
+  },
+  {
+    "row_id": 144,
+    "prediction": 0,
+    "anomaly_score": -0.07752179326437902
+  },
+  {
+    "row_id": 145,
+    "prediction": 0,
+    "anomaly_score": -0.0978930304709073
+  },
+  {
+    "row_id": 146,
+    "prediction": 0,
+    "anomaly_score": -0.08620922723026392
+  },
+  {
+    "row_id": 147,
+    "prediction": 0,
+    "anomaly_score": -0.10820707530587637
+  },
+  {
+    "row_id": 148,
+    "prediction": 0,
+    "anomaly_score": -0.09770385121200925
+  },
+  {
+    "row_id": 149,
+    "prediction": 0,
+    "anomaly_score": -0.07347284518843827
+  },
+  {
+    "row_id": 150,
+    "prediction": 0,
+    "anomaly_score": -0.08366501205738203
+  },
+  {
+    "row_id": 151,
+    "prediction": 0,
+    "anomaly_score": -0.06134626616572786
+  },
+  {
+    "row_id": 152,
+    "prediction": 0,
+    "anomaly_score": -0.09737221467177831
+  },
+  {
+    "row_id": 153,
+    "prediction": 0,
+    "anomaly_score": -0.10402920533052484
+  },
+  {
+    "row_id": 154,
+    "prediction": 0,
+    "anomaly_score": -0.11145052486771279
+  },
+  {
+    "row_id": 155,
+    "prediction": 0,
+    "anomaly_score": -0.11277684056544668
+  },
+  {
+    "row_id": 156,
+    "prediction": 0,
+    "anomaly_score": -0.10460568648713969
+  },
+  {
+    "row_id": 157,
+    "prediction": 0,
+    "anomaly_score": -0.1146266999892332
+  },
+  {
+    "row_id": 158,
+    "prediction": 0,
+    "anomaly_score": -0.10326634826441267
+  },
+  {
+    "row_id": 159,
+    "prediction": 0,
+    "anomaly_score": -0.10350250859483645
+  },
+  {
+    "row_id": 160,
+    "prediction": 0,
+    "anomaly_score": -0.057101221238629596
+  },
+  {
+    "row_id": 161,
+    "prediction": 0,
+    "anomaly_score": -0.11366075427492739
+  },
+  {
+    "row_id": 162,
+    "prediction": 0,
+    "anomaly_score": -0.11849951330260267
+  },
+  {
+    "row_id": 163,
+    "prediction": 0,
+    "anomaly_score": -0.10471426957040442
+  },
+  {
+    "row_id": 164,
+    "prediction": 0,
+    "anomaly_score": -0.122805978951538
+  },
+  {
+    "row_id": 165,
+    "prediction": 0,
+    "anomaly_score": -0.08966332115811587
+  },
+  {
+    "row_id": 166,
+    "prediction": 0,
+    "anomaly_score": -0.10261300856141908
+  },
+  {
+    "row_id": 167,
+    "prediction": 0,
+    "anomaly_score": -0.10932731972555354
+  },
+  {
+    "row_id": 168,
+    "prediction": 0,
+    "anomaly_score": -0.05559673486722777
+  },
+  {
+    "row_id": 169,
+    "prediction": 0,
+    "anomaly_score": -0.07808701533772272
+  },
+  {
+    "row_id": 170,
+    "prediction": 0,
+    "anomaly_score": -0.12661410871724593
+  },
+  {
+    "row_id": 171,
+    "prediction": 0,
+    "anomaly_score": -0.1148259746155823
+  },
+  {
+    "row_id": 172,
+    "prediction": 0,
+    "anomaly_score": -0.10318986675911124
+  },
+  {
+    "row_id": 173,
+    "prediction": 0,
+    "anomaly_score": -0.07723274897170446
+  },
+  {
+    "row_id": 174,
+    "prediction": 0,
+    "anomaly_score": -0.10430246524562797
+  },
+  {
+    "row_id": 175,
+    "prediction": 0,
+    "anomaly_score": -0.11671875099547957
+  },
+  {
+    "row_id": 176,
+    "prediction": 0,
+    "anomaly_score": -0.10365824954383251
+  },
+  {
+    "row_id": 177,
+    "prediction": 0,
+    "anomaly_score": -0.09370234113285836
+  },
+  {
+    "row_id": 178,
+    "prediction": 0,
+    "anomaly_score": -0.10938762394539542
+  },
+  {
+    "row_id": 179,
+    "prediction": 0,
+    "anomaly_score": -0.08322366223169159
+  },
+  {
+    "row_id": 180,
+    "prediction": 0,
+    "anomaly_score": -0.09640451155514779
+  },
+  {
+    "row_id": 181,
+    "prediction": 0,
+    "anomaly_score": -0.1025862852681439
+  },
+  {
+    "row_id": 182,
+    "prediction": 0,
+    "anomaly_score": -0.09973270969901965
+  },
+  {
+    "row_id": 183,
+    "prediction": 0,
+    "anomaly_score": -0.10322610559574463
+  },
+  {
+    "row_id": 184,
+    "prediction": 0,
+    "anomaly_score": -0.04721327628925043
+  },
+  {
+    "row_id": 185,
+    "prediction": 0,
+    "anomaly_score": -0.10156691686147695
+  },
+  {
+    "row_id": 186,
+    "prediction": 0,
+    "anomaly_score": -0.09470787483752674
+  },
+  {
+    "row_id": 187,
+    "prediction": 0,
+    "anomaly_score": -0.10875437440945651
+  },
+  {
+    "row_id": 188,
+    "prediction": 0,
+    "anomaly_score": -0.10871336660237141
+  },
+  {
+    "row_id": 189,
+    "prediction": 0,
+    "anomaly_score": -0.09803174396338044
+  },
+  {
+    "row_id": 190,
+    "prediction": 0,
+    "anomaly_score": -0.09515799084079163
+  },
+  {
+    "row_id": 191,
+    "prediction": 0,
+    "anomaly_score": -0.09348416689998501
+  },
+  {
+    "row_id": 192,
+    "prediction": 0,
+    "anomaly_score": -0.1178782750638861
+  },
+  {
+    "row_id": 193,
+    "prediction": 0,
+    "anomaly_score": -0.11280852131976965
+  },
+  {
+    "row_id": 194,
+    "prediction": 0,
+    "anomaly_score": -0.07091553541306528
+  },
+  {
+    "row_id": 195,
+    "prediction": 0,
+    "anomaly_score": -0.1048561092083033
+  },
+  {
+    "row_id": 196,
+    "prediction": 0,
+    "anomaly_score": -0.08586350899229911
+  },
+  {
+    "row_id": 197,
+    "prediction": 0,
+    "anomaly_score": -0.09947122928274027
+  },
+  {
+    "row_id": 198,
+    "prediction": 0,
+    "anomaly_score": -0.09294277875134005
+  },
+  {
+    "row_id": 199,
+    "prediction": 0,
+    "anomaly_score": -0.09266202492990883
+  },
+  {
+    "row_id": 200,
+    "prediction": 0,
+    "anomaly_score": -0.08451758468419945
+  },
+  {
+    "row_id": 201,
+    "prediction": 0,
+    "anomaly_score": -0.08237130441890572
+  },
+  {
+    "row_id": 202,
+    "prediction": 0,
+    "anomaly_score": -0.10553719160552993
+  },
+  {
+    "row_id": 203,
+    "prediction": 0,
+    "anomaly_score": -0.11450528237155444
+  },
+  {
+    "row_id": 204,
+    "prediction": 0,
+    "anomaly_score": -0.11357985667013676
+  },
+  {
+    "row_id": 205,
+    "prediction": 0,
+    "anomaly_score": -0.08567386336116134
+  },
+  {
+    "row_id": 206,
+    "prediction": 0,
+    "anomaly_score": -0.11027603192196489
+  },
+  {
+    "row_id": 207,
+    "prediction": 0,
+    "anomaly_score": -0.09721665070359864
+  },
+  {
+    "row_id": 208,
+    "prediction": 0,
+    "anomaly_score": -0.10621918301301486
+  },
+  {
+    "row_id": 209,
+    "prediction": 0,
+    "anomaly_score": -0.09754662152240756
+  },
+  {
+    "row_id": 210,
+    "prediction": 0,
+    "anomaly_score": -0.09264366508528016
+  },
+  {
+    "row_id": 211,
+    "prediction": 0,
+    "anomaly_score": -0.10410916043894725
+  },
+  {
+    "row_id": 212,
+    "prediction": 0,
+    "anomaly_score": -0.07310258912029977
+  },
+  {
+    "row_id": 213,
+    "prediction": 0,
+    "anomaly_score": -0.08686187599119011
+  },
+  {
+    "row_id": 214,
+    "prediction": 0,
+    "anomaly_score": -0.09337211956175073
+  },
+  {
+    "row_id": 215,
+    "prediction": 0,
+    "anomaly_score": -0.09922498676947467
+  },
+  {
+    "row_id": 216,
+    "prediction": 0,
+    "anomaly_score": -0.11491577199689329
+  },
+  {
+    "row_id": 217,
+    "prediction": 0,
+    "anomaly_score": -0.0836413801851823
+  },
+  {
+    "row_id": 218,
+    "prediction": 0,
+    "anomaly_score": -0.1101009604460445
+  },
+  {
+    "row_id": 219,
+    "prediction": 0,
+    "anomaly_score": -0.091857543681092
+  },
+  {
+    "row_id": 220,
+    "prediction": 0,
+    "anomaly_score": -0.08595861767751761
+  },
+  {
+    "row_id": 221,
+    "prediction": 0,
+    "anomaly_score": -0.08946226734001234
+  },
+  {
+    "row_id": 222,
+    "prediction": 0,
+    "anomaly_score": -0.09321001545921742
+  },
+  {
+    "row_id": 223,
+    "prediction": 0,
+    "anomaly_score": -0.09019937295115849
+  },
+  {
+    "row_id": 224,
+    "prediction": 0,
+    "anomaly_score": -0.09282666389964866
+  },
+  {
+    "row_id": 225,
+    "prediction": 0,
+    "anomaly_score": -0.09756158337042997
+  },
+  {
+    "row_id": 226,
+    "prediction": 0,
+    "anomaly_score": -0.09000653057036567
+  },
+  {
+    "row_id": 227,
+    "prediction": 0,
+    "anomaly_score": -0.08816445545619983
+  },
+  {
+    "row_id": 228,
+    "prediction": 0,
+    "anomaly_score": -0.09851007039592558
+  },
+  {
+    "row_id": 229,
+    "prediction": 0,
+    "anomaly_score": -0.10275394011843753
+  },
+  {
+    "row_id": 230,
+    "prediction": 0,
+    "anomaly_score": -0.10449078418057978
+  },
+  {
+    "row_id": 231,
+    "prediction": 0,
+    "anomaly_score": -0.11525714779890067
+  },
+  {
+    "row_id": 232,
+    "prediction": 0,
+    "anomaly_score": -0.11089800438161856
+  },
+  {
+    "row_id": 233,
+    "prediction": 0,
+    "anomaly_score": -0.10611027327511141
+  },
+  {
+    "row_id": 234,
+    "prediction": 0,
+    "anomaly_score": -0.10484330316228785
+  },
+  {
+    "row_id": 235,
+    "prediction": 0,
+    "anomaly_score": -0.10769359798949801
+  },
+  {
+    "row_id": 236,
+    "prediction": 0,
+    "anomaly_score": -0.10271680568748354
+  },
+  {
+    "row_id": 237,
+    "prediction": 0,
+    "anomaly_score": -0.0947481644562973
+  },
+  {
+    "row_id": 238,
+    "prediction": 0,
+    "anomaly_score": -0.11208818474176341
+  },
+  {
+    "row_id": 239,
+    "prediction": 0,
+    "anomaly_score": -0.09019096812949279
+  },
+  {
+    "row_id": 240,
+    "prediction": 0,
+    "anomaly_score": -0.0877233833877708
+  },
+  {
+    "row_id": 241,
+    "prediction": 0,
+    "anomaly_score": -0.10770223230838805
+  },
+  {
+    "row_id": 242,
+    "prediction": 0,
+    "anomaly_score": -0.08726519199169713
+  },
+  {
+    "row_id": 243,
+    "prediction": 0,
+    "anomaly_score": -0.09391071635159942
+  },
+  {
+    "row_id": 244,
+    "prediction": 0,
+    "anomaly_score": -0.10290603670065368
+  },
+  {
+    "row_id": 245,
+    "prediction": 0,
+    "anomaly_score": -0.11451681925748985
+  },
+  {
+    "row_id": 246,
+    "prediction": 0,
+    "anomaly_score": -0.10115389192347563
+  },
+  {
+    "row_id": 247,
+    "prediction": 0,
+    "anomaly_score": -0.09847398832552173
+  },
+  {
+    "row_id": 248,
+    "prediction": 0,
+    "anomaly_score": -0.1083514762041044
+  },
+  {
+    "row_id": 249,
+    "prediction": 0,
+    "anomaly_score": -0.10004394362221325
+  },
+  {
+    "row_id": 250,
+    "prediction": 0,
+    "anomaly_score": -0.08849754087057832
+  },
+  {
+    "row_id": 251,
+    "prediction": 0,
+    "anomaly_score": -0.09649600687687693
+  },
+  {
+    "row_id": 252,
+    "prediction": 0,
+    "anomaly_score": -0.09271002881760382
+  },
+  {
+    "row_id": 253,
+    "prediction": 0,
+    "anomaly_score": -0.08719339338708748
+  },
+  {
+    "row_id": 254,
+    "prediction": 0,
+    "anomaly_score": -0.08421594027229684
+  },
+  {
+    "row_id": 255,
+    "prediction": 0,
+    "anomaly_score": -0.10660069479926726
+  },
+  {
+    "row_id": 256,
+    "prediction": 0,
+    "anomaly_score": -0.10574089533952269
+  },
+  {
+    "row_id": 257,
+    "prediction": 0,
+    "anomaly_score": -0.10306828361594528
+  },
+  {
+    "row_id": 258,
+    "prediction": 0,
+    "anomaly_score": -0.09889997641500797
+  },
+  {
+    "row_id": 259,
+    "prediction": 0,
+    "anomaly_score": -0.1095411504194575
+  },
+  {
+    "row_id": 260,
+    "prediction": 0,
+    "anomaly_score": -0.07294197873233482
+  },
+  {
+    "row_id": 261,
+    "prediction": 0,
+    "anomaly_score": -0.10677346073053923
+  },
+  {
+    "row_id": 262,
+    "prediction": 0,
+    "anomaly_score": -0.1060725223060055
+  },
+  {
+    "row_id": 263,
+    "prediction": 0,
+    "anomaly_score": -0.09559135903535326
+  },
+  {
+    "row_id": 264,
+    "prediction": 0,
+    "anomaly_score": -0.03758606751086019
+  },
+  {
+    "row_id": 265,
+    "prediction": 0,
+    "anomaly_score": -0.11549260552239038
+  },
+  {
+    "row_id": 266,
+    "prediction": 0,
+    "anomaly_score": -0.1186321237684747
+  },
+  {
+    "row_id": 267,
+    "prediction": 0,
+    "anomaly_score": -0.08087050686848246
+  },
+  {
+    "row_id": 268,
+    "prediction": 0,
+    "anomaly_score": -0.09920318004401046
+  },
+  {
+    "row_id": 269,
+    "prediction": 0,
+    "anomaly_score": -0.10829112541273611
+  },
+  {
+    "row_id": 270,
+    "prediction": 0,
+    "anomaly_score": -0.08626167167552001
+  },
+  {
+    "row_id": 271,
+    "prediction": 0,
+    "anomaly_score": -0.0925560373208269
+  },
+  {
+    "row_id": 272,
+    "prediction": 0,
+    "anomaly_score": -0.08436690248462181
+  },
+  {
+    "row_id": 273,
+    "prediction": 0,
+    "anomaly_score": -0.09831725942953234
+  },
+  {
+    "row_id": 274,
+    "prediction": 0,
+    "anomaly_score": -0.11766441380624709
+  },
+  {
+    "row_id": 275,
+    "prediction": 0,
+    "anomaly_score": -0.10341170298861713
+  },
+  {
+    "row_id": 276,
+    "prediction": 0,
+    "anomaly_score": -0.08140111091209423
+  },
+  {
+    "row_id": 277,
+    "prediction": 0,
+    "anomaly_score": -0.1050363802053988
+  },
+  {
+    "row_id": 278,
+    "prediction": 0,
+    "anomaly_score": -0.09045204894916103
+  },
+  {
+    "row_id": 279,
+    "prediction": 0,
+    "anomaly_score": -0.12395255485907541
+  },
+  {
+    "row_id": 280,
+    "prediction": 0,
+    "anomaly_score": -0.09766005468019462
+  },
+  {
+    "row_id": 281,
+    "prediction": 0,
+    "anomaly_score": -0.10185764141193193
+  },
+  {
+    "row_id": 282,
+    "prediction": 0,
+    "anomaly_score": -0.09891335647627442
+  },
+  {
+    "row_id": 283,
+    "prediction": 0,
+    "anomaly_score": -0.1090580759788472
+  },
+  {
+    "row_id": 284,
+    "prediction": 0,
+    "anomaly_score": -0.06850076376466113
+  },
+  {
+    "row_id": 285,
+    "prediction": 0,
+    "anomaly_score": -0.09461235727984474
+  },
+  {
+    "row_id": 286,
+    "prediction": 0,
+    "anomaly_score": -0.10456583556836985
+  },
+  {
+    "row_id": 287,
+    "prediction": 0,
+    "anomaly_score": -0.09251866676426262
+  },
+  {
+    "row_id": 288,
+    "prediction": 0,
+    "anomaly_score": -0.10844068628396125
+  },
+  {
+    "row_id": 289,
+    "prediction": 0,
+    "anomaly_score": -0.07836021450156522
+  },
+  {
+    "row_id": 290,
+    "prediction": 0,
+    "anomaly_score": -0.11680617669548582
+  },
+  {
+    "row_id": 291,
+    "prediction": 0,
+    "anomaly_score": -0.10216678571033261
+  },
+  {
+    "row_id": 292,
+    "prediction": 0,
+    "anomaly_score": -0.09335639053647748
+  },
+  {
+    "row_id": 293,
+    "prediction": 0,
+    "anomaly_score": -0.12401756764502553
+  },
+  {
+    "row_id": 294,
+    "prediction": 0,
+    "anomaly_score": -0.08714999630381881
+  },
+  {
+    "row_id": 295,
+    "prediction": 0,
+    "anomaly_score": -0.09615862282402393
+  },
+  {
+    "row_id": 296,
+    "prediction": 0,
+    "anomaly_score": -0.09209172341198502
+  },
+  {
+    "row_id": 297,
+    "prediction": 0,
+    "anomaly_score": -0.10708140999204518
+  },
+  {
+    "row_id": 298,
+    "prediction": 0,
+    "anomaly_score": -0.10317875315300462
+  },
+  {
+    "row_id": 299,
+    "prediction": 0,
+    "anomaly_score": -0.0653710858451283
+  },
+  {
+    "row_id": 300,
+    "prediction": 0,
+    "anomaly_score": -0.08669201975046126
+  },
+  {
+    "row_id": 301,
+    "prediction": 0,
+    "anomaly_score": -0.11150705090619051
+  },
+  {
+    "row_id": 302,
+    "prediction": 0,
+    "anomaly_score": -0.0883301020620414
+  },
+  {
+    "row_id": 303,
+    "prediction": 0,
+    "anomaly_score": -0.11916891243713634
+  },
+  {
+    "row_id": 304,
+    "prediction": 0,
+    "anomaly_score": -0.09515654224757342
+  },
+  {
+    "row_id": 305,
+    "prediction": 0,
+    "anomaly_score": -0.09609275333489503
+  },
+  {
+    "row_id": 306,
+    "prediction": 0,
+    "anomaly_score": -0.10838152687546931
+  },
+  {
+    "row_id": 307,
+    "prediction": 0,
+    "anomaly_score": -0.1087915087586655
+  },
+  {
+    "row_id": 308,
+    "prediction": 0,
+    "anomaly_score": -0.09878537350494115
+  },
+  {
+    "row_id": 309,
+    "prediction": 0,
+    "anomaly_score": -0.10094756949155126
+  },
+  {
+    "row_id": 310,
+    "prediction": 0,
+    "anomaly_score": -0.0992608408292876
+  },
+  {
+    "row_id": 311,
+    "prediction": 0,
+    "anomaly_score": -0.11251956353995374
+  },
+  {
+    "row_id": 312,
+    "prediction": 0,
+    "anomaly_score": -0.10860114768202067
+  },
+  {
+    "row_id": 313,
+    "prediction": 0,
+    "anomaly_score": -0.09392434490155133
+  },
+  {
+    "row_id": 314,
+    "prediction": 0,
+    "anomaly_score": -0.10506626416083625
+  },
+  {
+    "row_id": 315,
+    "prediction": 0,
+    "anomaly_score": -0.09636069409425552
+  },
+  {
+    "row_id": 316,
+    "prediction": 0,
+    "anomaly_score": -0.10668240916805882
+  },
+  {
+    "row_id": 317,
+    "prediction": 0,
+    "anomaly_score": -0.04324930082601475
+  },
+  {
+    "row_id": 318,
+    "prediction": 0,
+    "anomaly_score": -0.10600825770023259
+  },
+  {
+    "row_id": 319,
+    "prediction": 0,
+    "anomaly_score": -0.11382171237231165
+  },
+  {
+    "row_id": 320,
+    "prediction": 0,
+    "anomaly_score": -0.11850945367892368
+  },
+  {
+    "row_id": 321,
+    "prediction": 0,
+    "anomaly_score": -0.10416087015285286
+  },
+  {
+    "row_id": 322,
+    "prediction": 0,
+    "anomaly_score": -0.10375535629788307
+  },
+  {
+    "row_id": 323,
+    "prediction": 0,
+    "anomaly_score": -0.10456695701087115
+  },
+  {
+    "row_id": 324,
+    "prediction": 0,
+    "anomaly_score": -0.07785349348065274
+  },
+  {
+    "row_id": 325,
+    "prediction": 0,
+    "anomaly_score": -0.10462789654672178
+  },
+  {
+    "row_id": 326,
+    "prediction": 0,
+    "anomaly_score": -0.09380849550561399
+  },
+  {
+    "row_id": 327,
+    "prediction": 0,
+    "anomaly_score": -0.10451656717874369
+  },
+  {
+    "row_id": 328,
+    "prediction": 0,
+    "anomaly_score": -0.118228111422719
+  },
+  {
+    "row_id": 329,
+    "prediction": 0,
+    "anomaly_score": -0.09112852828231977
+  },
+  {
+    "row_id": 330,
+    "prediction": 0,
+    "anomaly_score": -0.1041620269936987
+  },
+  {
+    "row_id": 331,
+    "prediction": 0,
+    "anomaly_score": -0.10588629905171132
+  },
+  {
+    "row_id": 332,
+    "prediction": 0,
+    "anomaly_score": -0.10082387305121948
+  },
+  {
+    "row_id": 333,
+    "prediction": 0,
+    "anomaly_score": -0.10033810906996299
+  },
+  {
+    "row_id": 334,
+    "prediction": 0,
+    "anomaly_score": -0.05959623376145079
+  },
+  {
+    "row_id": 335,
+    "prediction": 0,
+    "anomaly_score": -0.09318915636369074
+  },
+  {
+    "row_id": 336,
+    "prediction": 0,
+    "anomaly_score": -0.10040763267744734
+  },
+  {
+    "row_id": 337,
+    "prediction": 0,
+    "anomaly_score": -0.07269648093333042
+  },
+  {
+    "row_id": 338,
+    "prediction": 0,
+    "anomaly_score": -0.09400837358826841
+  },
+  {
+    "row_id": 339,
+    "prediction": 0,
+    "anomaly_score": -0.09500516483564103
+  },
+  {
+    "row_id": 340,
+    "prediction": 0,
+    "anomaly_score": -0.09232579935110097
+  },
+  {
+    "row_id": 341,
+    "prediction": 0,
+    "anomaly_score": -0.06687160691762961
+  },
+  {
+    "row_id": 342,
+    "prediction": 0,
+    "anomaly_score": -0.09092963717600755
+  },
+  {
+    "row_id": 343,
+    "prediction": 0,
+    "anomaly_score": -0.11268236282320471
+  },
+  {
+    "row_id": 344,
+    "prediction": 0,
+    "anomaly_score": -0.06697113254311604
+  },
+  {
+    "row_id": 345,
+    "prediction": 0,
+    "anomaly_score": -0.09297661823197456
+  },
+  {
+    "row_id": 346,
+    "prediction": 0,
+    "anomaly_score": -0.10823761203425031
+  },
+  {
+    "row_id": 347,
+    "prediction": 0,
+    "anomaly_score": -0.11104243537852693
+  },
+  {
+    "row_id": 348,
+    "prediction": 0,
+    "anomaly_score": -0.08151754756876067
+  },
+  {
+    "row_id": 349,
+    "prediction": 0,
+    "anomaly_score": -0.10055618822430545
+  },
+  {
+    "row_id": 350,
+    "prediction": 0,
+    "anomaly_score": -0.09592756701623772
+  },
+  {
+    "row_id": 351,
+    "prediction": 0,
+    "anomaly_score": -0.10562041032851449
+  },
+  {
+    "row_id": 352,
+    "prediction": 0,
+    "anomaly_score": -0.11580334278301335
+  },
+  {
+    "row_id": 353,
+    "prediction": 0,
+    "anomaly_score": -0.101110838341186
+  },
+  {
+    "row_id": 354,
+    "prediction": 0,
+    "anomaly_score": -0.11624269427947437
+  },
+  {
+    "row_id": 355,
+    "prediction": 0,
+    "anomaly_score": -0.09627099498458158
+  },
+  {
+    "row_id": 356,
+    "prediction": 0,
+    "anomaly_score": -0.11132219223922046
+  },
+  {
+    "row_id": 357,
+    "prediction": 0,
+    "anomaly_score": -0.10351367066267897
+  },
+  {
+    "row_id": 358,
+    "prediction": 0,
+    "anomaly_score": -0.11894364577219818
+  },
+  {
+    "row_id": 359,
+    "prediction": 0,
+    "anomaly_score": -0.10202776033512545
+  },
+  {
+    "row_id": 360,
+    "prediction": 0,
+    "anomaly_score": -0.10295450987740956
+  },
+  {
+    "row_id": 361,
+    "prediction": 0,
+    "anomaly_score": -0.10663726559193787
+  },
+  {
+    "row_id": 362,
+    "prediction": 0,
+    "anomaly_score": -0.08658494270506034
+  },
+  {
+    "row_id": 363,
+    "prediction": 0,
+    "anomaly_score": -0.10962838225194815
+  },
+  {
+    "row_id": 364,
+    "prediction": 0,
+    "anomaly_score": -0.10569387060416652
+  },
+  {
+    "row_id": 365,
+    "prediction": 0,
+    "anomaly_score": -0.0856662234874066
+  },
+  {
+    "row_id": 366,
+    "prediction": 0,
+    "anomaly_score": -0.11939790795447153
+  },
+  {
+    "row_id": 367,
+    "prediction": 0,
+    "anomaly_score": -0.102554060223495
+  },
+  {
+    "row_id": 368,
+    "prediction": 0,
+    "anomaly_score": -0.10812338390732223
+  },
+  {
+    "row_id": 369,
+    "prediction": 0,
+    "anomaly_score": -0.0894820469489141
+  },
+  {
+    "row_id": 370,
+    "prediction": 0,
+    "anomaly_score": -0.10151945260945944
+  },
+  {
+    "row_id": 371,
+    "prediction": 0,
+    "anomaly_score": -0.09427776962174228
+  },
+  {
+    "row_id": 372,
+    "prediction": 0,
+    "anomaly_score": -0.10069466039945396
+  },
+  {
+    "row_id": 373,
+    "prediction": 0,
+    "anomaly_score": -0.10921264807360165
+  },
+  {
+    "row_id": 374,
+    "prediction": 0,
+    "anomaly_score": -0.10447073367565568
+  },
+  {
+    "row_id": 375,
+    "prediction": 0,
+    "anomaly_score": -0.11200647544403386
+  },
+  {
+    "row_id": 376,
+    "prediction": 0,
+    "anomaly_score": -0.0740887300714202
+  },
+  {
+    "row_id": 377,
+    "prediction": 0,
+    "anomaly_score": -0.10690458048242357
+  },
+  {
+    "row_id": 378,
+    "prediction": 0,
+    "anomaly_score": -0.08293114541282853
+  },
+  {
+    "row_id": 379,
+    "prediction": 0,
+    "anomaly_score": -0.10519162434261836
+  },
+  {
+    "row_id": 380,
+    "prediction": 0,
+    "anomaly_score": -0.08448863447790755
+  },
+  {
+    "row_id": 381,
+    "prediction": 0,
+    "anomaly_score": -0.10267051228824303
+  },
+  {
+    "row_id": 382,
+    "prediction": 0,
+    "anomaly_score": -0.1083520268402931
+  },
+  {
+    "row_id": 383,
+    "prediction": 0,
+    "anomaly_score": -0.11176502583594305
+  },
+  {
+    "row_id": 384,
+    "prediction": 0,
+    "anomaly_score": -0.0979815264273835
+  },
+  {
+    "row_id": 385,
+    "prediction": 0,
+    "anomaly_score": -0.09478975873800316
+  },
+  {
+    "row_id": 386,
+    "prediction": 0,
+    "anomaly_score": -0.0939718109055383
+  },
+  {
+    "row_id": 387,
+    "prediction": 0,
+    "anomaly_score": -0.10122391743068304
+  },
+  {
+    "row_id": 388,
+    "prediction": 0,
+    "anomaly_score": -0.09580124862875389
+  },
+  {
+    "row_id": 389,
+    "prediction": 0,
+    "anomaly_score": -0.10430929762803798
+  },
+  {
+    "row_id": 390,
+    "prediction": 0,
+    "anomaly_score": -0.11327319629110921
+  },
+  {
+    "row_id": 391,
+    "prediction": 0,
+    "anomaly_score": -0.11637016871579908
+  },
+  {
+    "row_id": 392,
+    "prediction": 0,
+    "anomaly_score": -0.0899007251596119
+  },
+  {
+    "row_id": 393,
+    "prediction": 0,
+    "anomaly_score": -0.10722157014487632
+  },
+  {
+    "row_id": 394,
+    "prediction": 0,
+    "anomaly_score": -0.08974719303564249
+  },
+  {
+    "row_id": 395,
+    "prediction": 0,
+    "anomaly_score": -0.06374506657862739
+  },
+  {
+    "row_id": 396,
+    "prediction": 0,
+    "anomaly_score": -0.09248804805373678
+  },
+  {
+    "row_id": 397,
+    "prediction": 0,
+    "anomaly_score": -0.10292012599715439
+  },
+  {
+    "row_id": 398,
+    "prediction": 0,
+    "anomaly_score": -0.09179092525208865
+  },
+  {
+    "row_id": 399,
+    "prediction": 0,
+    "anomaly_score": -0.09524838147068487
+  },
+  {
+    "row_id": 400,
+    "prediction": 0,
+    "anomaly_score": -0.10353493117700036
+  },
+  {
+    "row_id": 401,
+    "prediction": 0,
+    "anomaly_score": -0.09730177912382426
+  },
+  {
+    "row_id": 402,
+    "prediction": 0,
+    "anomaly_score": -0.10517025392899165
+  },
+  {
+    "row_id": 403,
+    "prediction": 0,
+    "anomaly_score": -0.10240441473220607
+  },
+  {
+    "row_id": 404,
+    "prediction": 0,
+    "anomaly_score": -0.10429427495478621
+  },
+  {
+    "row_id": 405,
+    "prediction": 0,
+    "anomaly_score": -0.10173287312883228
+  },
+  {
+    "row_id": 406,
+    "prediction": 0,
+    "anomaly_score": -0.06947052485355859
+  },
+  {
+    "row_id": 407,
+    "prediction": 0,
+    "anomaly_score": -0.11966910633285077
+  },
+  {
+    "row_id": 408,
+    "prediction": 0,
+    "anomaly_score": -0.09800764658499328
+  },
+  {
+    "row_id": 409,
+    "prediction": 0,
+    "anomaly_score": -0.08497054794202508
+  },
+  {
+    "row_id": 410,
+    "prediction": 0,
+    "anomaly_score": -0.10439059982226584
+  },
+  {
+    "row_id": 411,
+    "prediction": 0,
+    "anomaly_score": -0.1025106803950529
+  },
+  {
+    "row_id": 412,
+    "prediction": 0,
+    "anomaly_score": -0.1144936887117336
+  },
+  {
+    "row_id": 413,
+    "prediction": 0,
+    "anomaly_score": -0.11714453640672329
+  },
+  {
+    "row_id": 414,
+    "prediction": 0,
+    "anomaly_score": -0.10867908476188443
+  },
+  {
+    "row_id": 415,
+    "prediction": 0,
+    "anomaly_score": -0.10010837520186844
+  },
+  {
+    "row_id": 416,
+    "prediction": 0,
+    "anomaly_score": -0.09354875973587251
+  },
+  {
+    "row_id": 417,
+    "prediction": 0,
+    "anomaly_score": -0.10653058546937533
+  },
+  {
+    "row_id": 418,
+    "prediction": 0,
+    "anomaly_score": -0.07741487592262714
+  },
+  {
+    "row_id": 419,
+    "prediction": 0,
+    "anomaly_score": -0.09134332033395282
+  },
+  {
+    "row_id": 420,
+    "prediction": 0,
+    "anomaly_score": -0.09903005905904094
+  },
+  {
+    "row_id": 421,
+    "prediction": 0,
+    "anomaly_score": -0.10246478356010613
+  },
+  {
+    "row_id": 422,
+    "prediction": 0,
+    "anomaly_score": -0.10936833043318445
+  },
+  {
+    "row_id": 423,
+    "prediction": 0,
+    "anomaly_score": -0.08264847652937363
+  },
+  {
+    "row_id": 424,
+    "prediction": 0,
+    "anomaly_score": -0.08939624898729426
+  },
+  {
+    "row_id": 425,
+    "prediction": 0,
+    "anomaly_score": -0.0911924171045762
+  },
+  {
+    "row_id": 426,
+    "prediction": 0,
+    "anomaly_score": -0.0951038536127422
+  },
+  {
+    "row_id": 427,
+    "prediction": 0,
+    "anomaly_score": -0.09033684842663453
+  },
+  {
+    "row_id": 428,
+    "prediction": 0,
+    "anomaly_score": -0.11539743296990984
+  },
+  {
+    "row_id": 429,
+    "prediction": 0,
+    "anomaly_score": -0.08221904279881026
+  },
+  {
+    "row_id": 430,
+    "prediction": 0,
+    "anomaly_score": -0.10494454644478618
+  },
+  {
+    "row_id": 431,
+    "prediction": 0,
+    "anomaly_score": -0.11280399059342355
+  },
+  {
+    "row_id": 432,
+    "prediction": 0,
+    "anomaly_score": -0.10371784417971225
+  },
+  {
+    "row_id": 433,
+    "prediction": 0,
+    "anomaly_score": -0.08994669541362532
+  },
+  {
+    "row_id": 434,
+    "prediction": 1,
+    "anomaly_score": 0.01748521452587659
+  },
+  {
+    "row_id": 435,
+    "prediction": 0,
+    "anomaly_score": -0.10339198116004661
+  },
+  {
+    "row_id": 436,
+    "prediction": 0,
+    "anomaly_score": -0.10774038669559588
+  },
+  {
+    "row_id": 437,
+    "prediction": 0,
+    "anomaly_score": -0.11101615900624318
+  },
+  {
+    "row_id": 438,
+    "prediction": 0,
+    "anomaly_score": -0.10666384109399268
+  },
+  {
+    "row_id": 439,
+    "prediction": 0,
+    "anomaly_score": -0.10741402921415039
+  },
+  {
+    "row_id": 440,
+    "prediction": 0,
+    "anomaly_score": -0.0856584478877161
+  },
+  {
+    "row_id": 441,
+    "prediction": 0,
+    "anomaly_score": -0.09406977251329685
+  },
+  {
+    "row_id": 442,
+    "prediction": 0,
+    "anomaly_score": -0.10710885715489288
+  },
+  {
+    "row_id": 443,
+    "prediction": 0,
+    "anomaly_score": -0.10426977804160537
+  },
+  {
+    "row_id": 444,
+    "prediction": 0,
+    "anomaly_score": -0.06268393209079032
+  },
+  {
+    "row_id": 445,
+    "prediction": 0,
+    "anomaly_score": -0.08664642213392842
+  },
+  {
+    "row_id": 446,
+    "prediction": 0,
+    "anomaly_score": -0.10807758427887182
+  },
+  {
+    "row_id": 447,
+    "prediction": 0,
+    "anomaly_score": -0.10091993125809828
+  },
+  {
+    "row_id": 448,
+    "prediction": 0,
+    "anomaly_score": -0.09376893299006261
+  },
+  {
+    "row_id": 449,
+    "prediction": 0,
+    "anomaly_score": -0.10430238640647743
+  },
+  {
+    "row_id": 450,
+    "prediction": 0,
+    "anomaly_score": -0.09325584552960997
+  },
+  {
+    "row_id": 451,
+    "prediction": 0,
+    "anomaly_score": -0.11136929288781977
+  },
+  {
+    "row_id": 452,
+    "prediction": 0,
+    "anomaly_score": -0.09764738716994553
+  },
+  {
+    "row_id": 453,
+    "prediction": 0,
+    "anomaly_score": -0.09647067728417147
+  },
+  {
+    "row_id": 454,
+    "prediction": 0,
+    "anomaly_score": -0.08850898831519988
+  },
+  {
+    "row_id": 455,
+    "prediction": 0,
+    "anomaly_score": -0.12100078914993645
+  },
+  {
+    "row_id": 456,
+    "prediction": 0,
+    "anomaly_score": -0.0951351866279776
+  },
+  {
+    "row_id": 457,
+    "prediction": 0,
+    "anomaly_score": -0.09636893864784468
+  },
+  {
+    "row_id": 458,
+    "prediction": 0,
+    "anomaly_score": -0.09227797717412356
+  },
+  {
+    "row_id": 459,
+    "prediction": 0,
+    "anomaly_score": -0.09510088627973673
+  },
+  {
+    "row_id": 460,
+    "prediction": 0,
+    "anomaly_score": -0.10163880234026412
+  },
+  {
+    "row_id": 461,
+    "prediction": 0,
+    "anomaly_score": -0.07668443352193804
+  },
+  {
+    "row_id": 462,
+    "prediction": 0,
+    "anomaly_score": -0.09839851259006749
+  },
+  {
+    "row_id": 463,
+    "prediction": 0,
+    "anomaly_score": -0.10962697366893864
+  },
+  {
+    "row_id": 464,
+    "prediction": 0,
+    "anomaly_score": -0.10934694955352592
+  },
+  {
+    "row_id": 465,
+    "prediction": 0,
+    "anomaly_score": -0.12005653169027597
+  },
+  {
+    "row_id": 466,
+    "prediction": 0,
+    "anomaly_score": -0.08751849731841604
+  },
+  {
+    "row_id": 467,
+    "prediction": 0,
+    "anomaly_score": -0.12900865422859997
+  },
+  {
+    "row_id": 468,
+    "prediction": 0,
+    "anomaly_score": -0.09197224105118623
+  },
+  {
+    "row_id": 469,
+    "prediction": 0,
+    "anomaly_score": -0.09299625288662616
+  },
+  {
+    "row_id": 470,
+    "prediction": 0,
+    "anomaly_score": -0.08652471954543084
+  },
+  {
+    "row_id": 471,
+    "prediction": 0,
+    "anomaly_score": -0.11267043206167793
+  },
+  {
+    "row_id": 472,
+    "prediction": 0,
+    "anomaly_score": -0.1256680783328989
+  },
+  {
+    "row_id": 473,
+    "prediction": 0,
+    "anomaly_score": -0.0927496929137418
+  },
+  {
+    "row_id": 474,
+    "prediction": 0,
+    "anomaly_score": -0.10377492132713317
+  },
+  {
+    "row_id": 475,
+    "prediction": 0,
+    "anomaly_score": -0.09321672990564189
+  },
+  {
+    "row_id": 476,
+    "prediction": 0,
+    "anomaly_score": -0.10944416490604814
+  },
+  {
+    "row_id": 477,
+    "prediction": 0,
+    "anomaly_score": -0.03436561574592456
+  },
+  {
+    "row_id": 478,
+    "prediction": 0,
+    "anomaly_score": -0.11210262697837065
+  },
+  {
+    "row_id": 479,
+    "prediction": 0,
+    "anomaly_score": -0.0915433759017189
+  },
+  {
+    "row_id": 480,
+    "prediction": 0,
+    "anomaly_score": -0.0965641585961195
+  },
+  {
+    "row_id": 481,
+    "prediction": 0,
+    "anomaly_score": -0.09434817033798942
+  },
+  {
+    "row_id": 482,
+    "prediction": 0,
+    "anomaly_score": -0.0778860890897713
+  },
+  {
+    "row_id": 483,
+    "prediction": 0,
+    "anomaly_score": -0.11922780678824896
+  },
+  {
+    "row_id": 484,
+    "prediction": 0,
+    "anomaly_score": -0.1034370673872545
+  },
+  {
+    "row_id": 485,
+    "prediction": 0,
+    "anomaly_score": -0.0822279755154941
+  },
+  {
+    "row_id": 486,
+    "prediction": 0,
+    "anomaly_score": -0.1079943641325391
+  },
+  {
+    "row_id": 487,
+    "prediction": 0,
+    "anomaly_score": -0.08640443512223217
+  },
+  {
+    "row_id": 488,
+    "prediction": 0,
+    "anomaly_score": -0.09476371179792015
+  },
+  {
+    "row_id": 489,
+    "prediction": 0,
+    "anomaly_score": -0.0929559160774373
+  },
+  {
+    "row_id": 490,
+    "prediction": 0,
+    "anomaly_score": -0.11443103776278535
+  },
+  {
+    "row_id": 491,
+    "prediction": 0,
+    "anomaly_score": -0.09426931832737634
+  },
+  {
+    "row_id": 492,
+    "prediction": 0,
+    "anomaly_score": -0.11022835017538707
+  },
+  {
+    "row_id": 493,
+    "prediction": 0,
+    "anomaly_score": -0.0959171380861345
+  },
+  {
+    "row_id": 494,
+    "prediction": 0,
+    "anomaly_score": -0.09693842054813145
+  },
+  {
+    "row_id": 495,
+    "prediction": 0,
+    "anomaly_score": -0.09054926366461263
+  },
+  {
+    "row_id": 496,
+    "prediction": 0,
+    "anomaly_score": -0.08696878119738011
+  },
+  {
+    "row_id": 497,
+    "prediction": 0,
+    "anomaly_score": -0.08190855240644535
+  },
+  {
+    "row_id": 498,
+    "prediction": 0,
+    "anomaly_score": -0.10211394387177053
+  },
+  {
+    "row_id": 499,
+    "prediction": 0,
+    "anomaly_score": -0.08681906981418175
+  },
+  {
+    "row_id": 500,
+    "prediction": 0,
+    "anomaly_score": -0.10901245088760336
+  },
+  {
+    "row_id": 501,
+    "prediction": 0,
+    "anomaly_score": -0.07526481005235497
+  },
+  {
+    "row_id": 502,
+    "prediction": 0,
+    "anomaly_score": -0.08952390365776075
+  },
+  {
+    "row_id": 503,
+    "prediction": 0,
+    "anomaly_score": -0.10584462723066268
+  },
+  {
+    "row_id": 504,
+    "prediction": 0,
+    "anomaly_score": -0.09710214600323913
+  },
+  {
+    "row_id": 505,
+    "prediction": 0,
+    "anomaly_score": -0.08540469730413647
+  },
+  {
+    "row_id": 506,
+    "prediction": 0,
+    "anomaly_score": -0.10421485400917041
+  },
+  {
+    "row_id": 507,
+    "prediction": 0,
+    "anomaly_score": -0.0918799516828333
+  },
+  {
+    "row_id": 508,
+    "prediction": 0,
+    "anomaly_score": -0.10880780847819538
+  },
+  {
+    "row_id": 509,
+    "prediction": 0,
+    "anomaly_score": -0.09594576510670477
+  },
+  {
+    "row_id": 510,
+    "prediction": 0,
+    "anomaly_score": -0.10147399162627851
+  },
+  {
+    "row_id": 511,
+    "prediction": 0,
+    "anomaly_score": -0.09149558254082979
+  },
+  {
+    "row_id": 512,
+    "prediction": 0,
+    "anomaly_score": -0.09352796549912118
+  },
+  {
+    "row_id": 513,
+    "prediction": 0,
+    "anomaly_score": -0.09619538792918536
+  },
+  {
+    "row_id": 514,
+    "prediction": 0,
+    "anomaly_score": -0.1066578539524306
+  },
+  {
+    "row_id": 515,
+    "prediction": 0,
+    "anomaly_score": -0.1047896275428612
+  },
+  {
+    "row_id": 516,
+    "prediction": 0,
+    "anomaly_score": -0.1047216765255225
+  },
+  {
+    "row_id": 517,
+    "prediction": 0,
+    "anomaly_score": -0.11086506286901121
+  },
+  {
+    "row_id": 518,
+    "prediction": 0,
+    "anomaly_score": -0.09954482068323145
+  },
+  {
+    "row_id": 519,
+    "prediction": 0,
+    "anomaly_score": -0.0940732772915755
+  },
+  {
+    "row_id": 520,
+    "prediction": 0,
+    "anomaly_score": -0.1301835744268232
+  },
+  {
+    "row_id": 521,
+    "prediction": 0,
+    "anomaly_score": -0.10655983367518318
+  },
+  {
+    "row_id": 522,
+    "prediction": 0,
+    "anomaly_score": -0.11597803505760668
+  },
+  {
+    "row_id": 523,
+    "prediction": 0,
+    "anomaly_score": -0.08916596827635287
+  },
+  {
+    "row_id": 524,
+    "prediction": 0,
+    "anomaly_score": -0.03724535786012939
+  },
+  {
+    "row_id": 525,
+    "prediction": 0,
+    "anomaly_score": -0.11431240686485356
+  },
+  {
+    "row_id": 526,
+    "prediction": 0,
+    "anomaly_score": -0.10048285706027904
+  },
+  {
+    "row_id": 527,
+    "prediction": 0,
+    "anomaly_score": -0.10173259135911317
+  },
+  {
+    "row_id": 528,
+    "prediction": 0,
+    "anomaly_score": -0.08837184322867625
+  },
+  {
+    "row_id": 529,
+    "prediction": 0,
+    "anomaly_score": -0.11820249478885092
+  },
+  {
+    "row_id": 530,
+    "prediction": 0,
+    "anomaly_score": -0.09301978063531186
+  },
+  {
+    "row_id": 531,
+    "prediction": 0,
+    "anomaly_score": -0.10240166447144994
+  },
+  {
+    "row_id": 532,
+    "prediction": 0,
+    "anomaly_score": -0.1014947028148605
+  },
+  {
+    "row_id": 533,
+    "prediction": 0,
+    "anomaly_score": -0.11427539186138563
+  },
+  {
+    "row_id": 534,
+    "prediction": 0,
+    "anomaly_score": -0.07334909546833407
+  },
+  {
+    "row_id": 535,
+    "prediction": 0,
+    "anomaly_score": -0.12292722078080137
+  },
+  {
+    "row_id": 536,
+    "prediction": 0,
+    "anomaly_score": -0.0998627695802467
+  },
+  {
+    "row_id": 537,
+    "prediction": 0,
+    "anomaly_score": -0.1112371648702053
+  },
+  {
+    "row_id": 538,
+    "prediction": 0,
+    "anomaly_score": -0.0397567955102332
+  },
+  {
+    "row_id": 539,
+    "prediction": 0,
+    "anomaly_score": -0.11555997931050133
+  },
+  {
+    "row_id": 540,
+    "prediction": 0,
+    "anomaly_score": -0.10345287596887726
+  },
+  {
+    "row_id": 541,
+    "prediction": 0,
+    "anomaly_score": -0.1084505120487892
+  },
+  {
+    "row_id": 542,
+    "prediction": 0,
+    "anomaly_score": -0.10043622902129162
+  },
+  {
+    "row_id": 543,
+    "prediction": 0,
+    "anomaly_score": -0.046106586573628205
+  },
+  {
+    "row_id": 544,
+    "prediction": 0,
+    "anomaly_score": -0.1077318408844749
+  },
+  {
+    "row_id": 545,
+    "prediction": 0,
+    "anomaly_score": -0.1007205299626886
+  },
+  {
+    "row_id": 546,
+    "prediction": 0,
+    "anomaly_score": -0.09367078361141273
+  },
+  {
+    "row_id": 547,
+    "prediction": 0,
+    "anomaly_score": -0.03970614461146632
+  },
+  {
+    "row_id": 548,
+    "prediction": 0,
+    "anomaly_score": -0.10498228462556153
+  },
+  {
+    "row_id": 549,
+    "prediction": 0,
+    "anomaly_score": -0.10617885837803392
+  },
+  {
+    "row_id": 550,
+    "prediction": 0,
+    "anomaly_score": -0.09642616392210351
+  },
+  {
+    "row_id": 551,
+    "prediction": 0,
+    "anomaly_score": -0.09855787093012308
+  },
+  {
+    "row_id": 552,
+    "prediction": 0,
+    "anomaly_score": -0.1124535096896978
+  },
+  {
+    "row_id": 553,
+    "prediction": 0,
+    "anomaly_score": -0.1089355917017808
+  },
+  {
+    "row_id": 554,
+    "prediction": 0,
+    "anomaly_score": -0.10839957374096038
+  },
+  {
+    "row_id": 555,
+    "prediction": 0,
+    "anomaly_score": -0.09151292158004215
+  },
+  {
+    "row_id": 556,
+    "prediction": 0,
+    "anomaly_score": -0.09946585375206957
+  },
+  {
+    "row_id": 557,
+    "prediction": 0,
+    "anomaly_score": -0.11132622491068045
+  },
+  {
+    "row_id": 558,
+    "prediction": 0,
+    "anomaly_score": -0.09252295234358376
+  },
+  {
+    "row_id": 559,
+    "prediction": 0,
+    "anomaly_score": -0.10038312776672298
+  },
+  {
+    "row_id": 560,
+    "prediction": 0,
+    "anomaly_score": -0.07565217672628599
+  },
+  {
+    "row_id": 561,
+    "prediction": 0,
+    "anomaly_score": -0.12425756713598257
+  },
+  {
+    "row_id": 562,
+    "prediction": 0,
+    "anomaly_score": -0.08983133038796381
+  },
+  {
+    "row_id": 563,
+    "prediction": 0,
+    "anomaly_score": -0.09212999755349394
+  },
+  {
+    "row_id": 564,
+    "prediction": 0,
+    "anomaly_score": -0.11083513013677665
+  },
+  {
+    "row_id": 565,
+    "prediction": 0,
+    "anomaly_score": -0.0821462462251828
+  },
+  {
+    "row_id": 566,
+    "prediction": 0,
+    "anomaly_score": -0.09984343586645211
+  },
+  {
+    "row_id": 567,
+    "prediction": 0,
+    "anomaly_score": -0.06828300461901521
+  },
+  {
+    "row_id": 568,
+    "prediction": 0,
+    "anomaly_score": -0.0885905473882801
+  },
+  {
+    "row_id": 569,
+    "prediction": 0,
+    "anomaly_score": -0.10710807553375623
+  },
+  {
+    "row_id": 570,
+    "prediction": 0,
+    "anomaly_score": -0.12009643789699442
+  },
+  {
+    "row_id": 571,
+    "prediction": 0,
+    "anomaly_score": -0.09128900779435523
+  },
+  {
+    "row_id": 572,
+    "prediction": 0,
+    "anomaly_score": -0.0819502775290385
+  },
+  {
+    "row_id": 573,
+    "prediction": 0,
+    "anomaly_score": -0.04568732036781831
+  },
+  {
+    "row_id": 574,
+    "prediction": 0,
+    "anomaly_score": -0.10549255081641817
+  },
+  {
+    "row_id": 575,
+    "prediction": 0,
+    "anomaly_score": -0.1172480504451977
+  },
+  {
+    "row_id": 576,
+    "prediction": 0,
+    "anomaly_score": -0.10628916163916552
+  },
+  {
+    "row_id": 577,
+    "prediction": 0,
+    "anomaly_score": -0.09176598126606295
+  },
+  {
+    "row_id": 578,
+    "prediction": 0,
+    "anomaly_score": -0.070291436436347
+  },
+  {
+    "row_id": 579,
+    "prediction": 0,
+    "anomaly_score": -0.10934600971109049
+  },
+  {
+    "row_id": 580,
+    "prediction": 0,
+    "anomaly_score": -0.08786846480566612
+  },
+  {
+    "row_id": 581,
+    "prediction": 0,
+    "anomaly_score": -0.10948310299744501
+  },
+  {
+    "row_id": 582,
+    "prediction": 0,
+    "anomaly_score": -0.09972927845402979
+  },
+  {
+    "row_id": 583,
+    "prediction": 0,
+    "anomaly_score": -0.10791674572142662
+  },
+  {
+    "row_id": 584,
+    "prediction": 0,
+    "anomaly_score": -0.09022144723175968
+  },
+  {
+    "row_id": 585,
+    "prediction": 0,
+    "anomaly_score": -0.07900127206714985
+  },
+  {
+    "row_id": 586,
+    "prediction": 0,
+    "anomaly_score": -0.07594382520116705
+  },
+  {
+    "row_id": 587,
+    "prediction": 0,
+    "anomaly_score": -0.10809610902326966
+  },
+  {
+    "row_id": 588,
+    "prediction": 0,
+    "anomaly_score": -0.09780795700660305
+  },
+  {
+    "row_id": 589,
+    "prediction": 0,
+    "anomaly_score": -0.09750685841525258
+  },
+  {
+    "row_id": 590,
+    "prediction": 0,
+    "anomaly_score": -0.07569866814068177
+  },
+  {
+    "row_id": 591,
+    "prediction": 0,
+    "anomaly_score": -0.11035660475272713
+  },
+  {
+    "row_id": 592,
+    "prediction": 0,
+    "anomaly_score": -0.06277835608865195
+  },
+  {
+    "row_id": 593,
+    "prediction": 0,
+    "anomaly_score": -0.10369135706113464
+  },
+  {
+    "row_id": 594,
+    "prediction": 0,
+    "anomaly_score": -0.07261434376517456
+  },
+  {
+    "row_id": 595,
+    "prediction": 0,
+    "anomaly_score": -0.1112558064359323
+  },
+  {
+    "row_id": 596,
+    "prediction": 0,
+    "anomaly_score": -0.09071358921179645
+  },
+  {
+    "row_id": 597,
+    "prediction": 0,
+    "anomaly_score": -0.10475549131726225
+  },
+  {
+    "row_id": 598,
+    "prediction": 0,
+    "anomaly_score": -0.08698327013560553
+  },
+  {
+    "row_id": 599,
+    "prediction": 0,
+    "anomaly_score": -0.0791431999515056
+  },
+  {
+    "row_id": 600,
+    "prediction": 0,
+    "anomaly_score": -0.09496428063826284
+  },
+  {
+    "row_id": 601,
+    "prediction": 0,
+    "anomaly_score": -0.10327166559797524
+  },
+  {
+    "row_id": 602,
+    "prediction": 0,
+    "anomaly_score": -0.09212393967834592
+  },
+  {
+    "row_id": 603,
+    "prediction": 0,
+    "anomaly_score": -0.07021205929924107
+  },
+  {
+    "row_id": 604,
+    "prediction": 0,
+    "anomaly_score": -0.11141264897052744
+  },
+  {
+    "row_id": 605,
+    "prediction": 0,
+    "anomaly_score": -0.10240340995694153
+  },
+  {
+    "row_id": 606,
+    "prediction": 0,
+    "anomaly_score": -0.09777803750740716
+  },
+  {
+    "row_id": 607,
+    "prediction": 0,
+    "anomaly_score": -0.08982989033870997
+  },
+  {
+    "row_id": 608,
+    "prediction": 0,
+    "anomaly_score": -0.07711787413942661
+  },
+  {
+    "row_id": 609,
+    "prediction": 0,
+    "anomaly_score": -0.11393342024834252
+  },
+  {
+    "row_id": 610,
+    "prediction": 0,
+    "anomaly_score": -0.08608658666739971
+  },
+  {
+    "row_id": 611,
+    "prediction": 0,
+    "anomaly_score": -0.08842043414631179
+  },
+  {
+    "row_id": 612,
+    "prediction": 0,
+    "anomaly_score": -0.07601678423207964
+  },
+  {
+    "row_id": 613,
+    "prediction": 0,
+    "anomaly_score": -0.08803608132313534
+  },
+  {
+    "row_id": 614,
+    "prediction": 0,
+    "anomaly_score": -0.12459732556242809
+  },
+  {
+    "row_id": 615,
+    "prediction": 0,
+    "anomaly_score": -0.10944540930095703
+  },
+  {
+    "row_id": 616,
+    "prediction": 0,
+    "anomaly_score": -0.08413851488854546
+  },
+  {
+    "row_id": 617,
+    "prediction": 0,
+    "anomaly_score": -0.09607945118931066
+  },
+  {
+    "row_id": 618,
+    "prediction": 0,
+    "anomaly_score": -0.10016572752587793
+  },
+  {
+    "row_id": 619,
+    "prediction": 0,
+    "anomaly_score": -0.10483701531785111
+  },
+  {
+    "row_id": 620,
+    "prediction": 0,
+    "anomaly_score": -0.004126943584840281
+  },
+  {
+    "row_id": 621,
+    "prediction": 0,
+    "anomaly_score": -0.08601694226201484
+  },
+  {
+    "row_id": 622,
+    "prediction": 0,
+    "anomaly_score": -0.10967654932108639
+  },
+  {
+    "row_id": 623,
+    "prediction": 0,
+    "anomaly_score": -0.1135084409458228
+  },
+  {
+    "row_id": 624,
+    "prediction": 0,
+    "anomaly_score": -0.10943460010581818
+  },
+  {
+    "row_id": 625,
+    "prediction": 0,
+    "anomaly_score": -0.10583661533787647
+  },
+  {
+    "row_id": 626,
+    "prediction": 0,
+    "anomaly_score": -0.08945881260145422
+  },
+  {
+    "row_id": 627,
+    "prediction": 0,
+    "anomaly_score": -0.09521764614236711
+  },
+  {
+    "row_id": 628,
+    "prediction": 0,
+    "anomaly_score": -0.11732369571438045
+  },
+  {
+    "row_id": 629,
+    "prediction": 0,
+    "anomaly_score": -0.1049915852334582
+  },
+  {
+    "row_id": 630,
+    "prediction": 0,
+    "anomaly_score": -0.10154796475393552
+  },
+  {
+    "row_id": 631,
+    "prediction": 0,
+    "anomaly_score": -0.08860383180573056
+  },
+  {
+    "row_id": 632,
+    "prediction": 0,
+    "anomaly_score": -0.08973929862359248
+  },
+  {
+    "row_id": 633,
+    "prediction": 0,
+    "anomaly_score": -0.09699433541218055
+  },
+  {
+    "row_id": 634,
+    "prediction": 0,
+    "anomaly_score": -0.0987941582764933
+  },
+  {
+    "row_id": 635,
+    "prediction": 0,
+    "anomaly_score": -0.08335376090538282
+  },
+  {
+    "row_id": 636,
+    "prediction": 0,
+    "anomaly_score": -0.09101142199352236
+  },
+  {
+    "row_id": 637,
+    "prediction": 0,
+    "anomaly_score": -0.07882481751674592
+  },
+  {
+    "row_id": 638,
+    "prediction": 0,
+    "anomaly_score": -0.09512507323840597
+  },
+  {
+    "row_id": 639,
+    "prediction": 0,
+    "anomaly_score": -0.1087643186938061
+  },
+  {
+    "row_id": 640,
+    "prediction": 0,
+    "anomaly_score": -0.09941534776460492
+  },
+  {
+    "row_id": 641,
+    "prediction": 0,
+    "anomaly_score": -0.0846679751159305
+  },
+  {
+    "row_id": 642,
+    "prediction": 0,
+    "anomaly_score": -0.10935275660702809
+  },
+  {
+    "row_id": 643,
+    "prediction": 0,
+    "anomaly_score": -0.09765859432868013
+  },
+  {
+    "row_id": 644,
+    "prediction": 0,
+    "anomaly_score": -0.07100339924394317
+  },
+  {
+    "row_id": 645,
+    "prediction": 0,
+    "anomaly_score": -0.1120916828811021
+  },
+  {
+    "row_id": 646,
+    "prediction": 0,
+    "anomaly_score": -0.10246028422454234
+  },
+  {
+    "row_id": 647,
+    "prediction": 0,
+    "anomaly_score": -0.11255853844310215
+  },
+  {
+    "row_id": 648,
+    "prediction": 0,
+    "anomaly_score": -0.09593105659983453
+  },
+  {
+    "row_id": 649,
+    "prediction": 0,
+    "anomaly_score": -0.1007163063414957
+  },
+  {
+    "row_id": 650,
+    "prediction": 0,
+    "anomaly_score": -0.09361997637654373
+  },
+  {
+    "row_id": 651,
+    "prediction": 0,
+    "anomaly_score": -0.10283210433977152
+  },
+  {
+    "row_id": 652,
+    "prediction": 0,
+    "anomaly_score": -0.08516120997566928
+  },
+  {
+    "row_id": 653,
+    "prediction": 0,
+    "anomaly_score": -0.07099199534695172
+  },
+  {
+    "row_id": 654,
+    "prediction": 0,
+    "anomaly_score": -0.09524481401662527
+  },
+  {
+    "row_id": 655,
+    "prediction": 0,
+    "anomaly_score": -0.0625830088137066
+  },
+  {
+    "row_id": 656,
+    "prediction": 0,
+    "anomaly_score": -0.11047884927772017
+  },
+  {
+    "row_id": 657,
+    "prediction": 0,
+    "anomaly_score": -0.08132830189303264
+  },
+  {
+    "row_id": 658,
+    "prediction": 0,
+    "anomaly_score": -0.11510284799418641
+  },
+  {
+    "row_id": 659,
+    "prediction": 0,
+    "anomaly_score": -0.10765799341909055
+  },
+  {
+    "row_id": 660,
+    "prediction": 0,
+    "anomaly_score": -0.10907125851474475
+  },
+  {
+    "row_id": 661,
+    "prediction": 0,
+    "anomaly_score": -0.09555122562610746
+  },
+  {
+    "row_id": 662,
+    "prediction": 0,
+    "anomaly_score": -0.10851265034039798
+  },
+  {
+    "row_id": 663,
+    "prediction": 0,
+    "anomaly_score": -0.1113889683646066
+  },
+  {
+    "row_id": 664,
+    "prediction": 0,
+    "anomaly_score": -0.08011392451417065
+  },
+  {
+    "row_id": 665,
+    "prediction": 0,
+    "anomaly_score": -0.08569214110296647
+  },
+  {
+    "row_id": 666,
+    "prediction": 0,
+    "anomaly_score": -0.09941828844192951
+  },
+  {
+    "row_id": 667,
+    "prediction": 0,
+    "anomaly_score": -0.09388559901374999
+  },
+  {
+    "row_id": 668,
+    "prediction": 0,
+    "anomaly_score": -0.12197653210805737
+  },
+  {
+    "row_id": 669,
+    "prediction": 0,
+    "anomaly_score": -0.1072327354592329
+  },
+  {
+    "row_id": 670,
+    "prediction": 0,
+    "anomaly_score": -0.09656166757587764
+  },
+  {
+    "row_id": 671,
+    "prediction": 0,
+    "anomaly_score": -0.11362755995212082
+  },
+  {
+    "row_id": 672,
+    "prediction": 0,
+    "anomaly_score": -0.10078013239764472
+  },
+  {
+    "row_id": 673,
+    "prediction": 0,
+    "anomaly_score": -0.10513388493076381
+  },
+  {
+    "row_id": 674,
+    "prediction": 0,
+    "anomaly_score": -0.10294898490377352
+  },
+  {
+    "row_id": 675,
+    "prediction": 0,
+    "anomaly_score": -0.07504328689241724
+  },
+  {
+    "row_id": 676,
+    "prediction": 0,
+    "anomaly_score": -0.11738801497580659
+  },
+  {
+    "row_id": 677,
+    "prediction": 0,
+    "anomaly_score": -0.08452647391050294
+  },
+  {
+    "row_id": 678,
+    "prediction": 0,
+    "anomaly_score": -0.11304440522479958
+  },
+  {
+    "row_id": 679,
+    "prediction": 0,
+    "anomaly_score": -0.09419003396639675
+  },
+  {
+    "row_id": 680,
+    "prediction": 0,
+    "anomaly_score": -0.09247262275056622
+  },
+  {
+    "row_id": 681,
+    "prediction": 0,
+    "anomaly_score": -0.10286192688687545
+  },
+  {
+    "row_id": 682,
+    "prediction": 0,
+    "anomaly_score": -0.09532723312878894
+  },
+  {
+    "row_id": 683,
+    "prediction": 0,
+    "anomaly_score": -0.05646518247714938
+  },
+  {
+    "row_id": 684,
+    "prediction": 0,
+    "anomaly_score": -0.11329286088458695
+  },
+  {
+    "row_id": 685,
+    "prediction": 0,
+    "anomaly_score": -0.11318965871352277
+  },
+  {
+    "row_id": 686,
+    "prediction": 0,
+    "anomaly_score": -0.11642694234168577
+  },
+  {
+    "row_id": 687,
+    "prediction": 0,
+    "anomaly_score": -0.09479988394418642
+  },
+  {
+    "row_id": 688,
+    "prediction": 0,
+    "anomaly_score": -0.10363170195474025
+  },
+  {
+    "row_id": 689,
+    "prediction": 0,
+    "anomaly_score": -0.07852526454653214
+  },
+  {
+    "row_id": 690,
+    "prediction": 0,
+    "anomaly_score": -0.06631590224909734
+  },
+  {
+    "row_id": 691,
+    "prediction": 0,
+    "anomaly_score": -0.09227833513484501
+  },
+  {
+    "row_id": 692,
+    "prediction": 0,
+    "anomaly_score": -0.10971995376916843
+  },
+  {
+    "row_id": 693,
+    "prediction": 0,
+    "anomaly_score": -0.09026290500438616
+  },
+  {
+    "row_id": 694,
+    "prediction": 0,
+    "anomaly_score": -0.10953090792084558
+  },
+  {
+    "row_id": 695,
+    "prediction": 0,
+    "anomaly_score": -0.09978963625379955
+  },
+  {
+    "row_id": 696,
+    "prediction": 0,
+    "anomaly_score": -0.10487847996210664
+  },
+  {
+    "row_id": 697,
+    "prediction": 0,
+    "anomaly_score": -0.09389458150733643
+  },
+  {
+    "row_id": 698,
+    "prediction": 0,
+    "anomaly_score": -0.062445314959152454
+  },
+  {
+    "row_id": 699,
+    "prediction": 0,
+    "anomaly_score": -0.10589240840231268
+  },
+  {
+    "row_id": 700,
+    "prediction": 0,
+    "anomaly_score": -0.07489245859983085
+  },
+  {
+    "row_id": 701,
+    "prediction": 0,
+    "anomaly_score": -0.062094195583035916
+  },
+  {
+    "row_id": 702,
+    "prediction": 0,
+    "anomaly_score": -0.08034298389349481
+  },
+  {
+    "row_id": 703,
+    "prediction": 0,
+    "anomaly_score": -0.0735271562239595
+  },
+  {
+    "row_id": 704,
+    "prediction": 0,
+    "anomaly_score": -0.07824452133128035
+  },
+  {
+    "row_id": 705,
+    "prediction": 0,
+    "anomaly_score": -0.09289184659272609
+  },
+  {
+    "row_id": 706,
+    "prediction": 0,
+    "anomaly_score": -0.07396102553992467
+  },
+  {
+    "row_id": 707,
+    "prediction": 0,
+    "anomaly_score": -0.10396668822988137
+  },
+  {
+    "row_id": 708,
+    "prediction": 0,
+    "anomaly_score": -0.11423864499102787
+  },
+  {
+    "row_id": 709,
+    "prediction": 0,
+    "anomaly_score": -0.10863400104129489
+  },
+  {
+    "row_id": 710,
+    "prediction": 0,
+    "anomaly_score": -0.07891685925457398
+  },
+  {
+    "row_id": 711,
+    "prediction": 0,
+    "anomaly_score": -0.09200680732653266
+  },
+  {
+    "row_id": 712,
+    "prediction": 0,
+    "anomaly_score": -0.10401093834075031
+  },
+  {
+    "row_id": 713,
+    "prediction": 0,
+    "anomaly_score": -0.07948683843013615
+  },
+  {
+    "row_id": 714,
+    "prediction": 0,
+    "anomaly_score": -0.06241262860027835
+  },
+  {
+    "row_id": 715,
+    "prediction": 0,
+    "anomaly_score": -0.05522193215265886
+  },
+  {
+    "row_id": 716,
+    "prediction": 0,
+    "anomaly_score": -0.10440326631427838
+  },
+  {
+    "row_id": 717,
+    "prediction": 0,
+    "anomaly_score": -0.09480888086078687
+  },
+  {
+    "row_id": 718,
+    "prediction": 0,
+    "anomaly_score": -0.08062561911809368
+  },
+  {
+    "row_id": 719,
+    "prediction": 0,
+    "anomaly_score": -0.11164767194524283
+  },
+  {
+    "row_id": 720,
+    "prediction": 0,
+    "anomaly_score": -0.12052083508015848
+  },
+  {
+    "row_id": 721,
+    "prediction": 0,
+    "anomaly_score": -0.10381436844205189
+  },
+  {
+    "row_id": 722,
+    "prediction": 0,
+    "anomaly_score": -0.10008209153941061
+  },
+  {
+    "row_id": 723,
+    "prediction": 0,
+    "anomaly_score": -0.09982689282413093
+  },
+  {
+    "row_id": 724,
+    "prediction": 0,
+    "anomaly_score": -0.10037294675829561
+  },
+  {
+    "row_id": 725,
+    "prediction": 0,
+    "anomaly_score": -0.09109583006228716
+  },
+  {
+    "row_id": 726,
+    "prediction": 0,
+    "anomaly_score": -0.0674356340107326
+  },
+  {
+    "row_id": 727,
+    "prediction": 0,
+    "anomaly_score": -0.10137966506790824
+  },
+  {
+    "row_id": 728,
+    "prediction": 0,
+    "anomaly_score": -0.10916261476056865
+  },
+  {
+    "row_id": 729,
+    "prediction": 0,
+    "anomaly_score": -0.06741504751898092
+  },
+  {
+    "row_id": 730,
+    "prediction": 0,
+    "anomaly_score": -0.09072187473133525
+  },
+  {
+    "row_id": 731,
+    "prediction": 0,
+    "anomaly_score": -0.09014028249696882
+  },
+  {
+    "row_id": 732,
+    "prediction": 0,
+    "anomaly_score": -0.1028963700840777
+  },
+  {
+    "row_id": 733,
+    "prediction": 0,
+    "anomaly_score": -0.09872971498674926
+  },
+  {
+    "row_id": 734,
+    "prediction": 0,
+    "anomaly_score": -0.08797102048361843
+  },
+  {
+    "row_id": 735,
+    "prediction": 0,
+    "anomaly_score": -0.07301848730069949
+  },
+  {
+    "row_id": 736,
+    "prediction": 0,
+    "anomaly_score": -0.10983087908522693
+  },
+  {
+    "row_id": 737,
+    "prediction": 0,
+    "anomaly_score": -0.10846562524655723
+  },
+  {
+    "row_id": 738,
+    "prediction": 0,
+    "anomaly_score": -0.06905854123629096
+  },
+  {
+    "row_id": 739,
+    "prediction": 0,
+    "anomaly_score": -0.0925710647204126
+  },
+  {
+    "row_id": 740,
+    "prediction": 0,
+    "anomaly_score": -0.09105829672559163
+  },
+  {
+    "row_id": 741,
+    "prediction": 0,
+    "anomaly_score": -0.11254825168758226
+  },
+  {
+    "row_id": 742,
+    "prediction": 0,
+    "anomaly_score": -0.09213006581320654
+  },
+  {
+    "row_id": 743,
+    "prediction": 0,
+    "anomaly_score": -0.08275991778668546
+  },
+  {
+    "row_id": 744,
+    "prediction": 0,
+    "anomaly_score": -0.07368372576084731
+  },
+  {
+    "row_id": 745,
+    "prediction": 0,
+    "anomaly_score": -0.10077558413759197
+  },
+  {
+    "row_id": 746,
+    "prediction": 0,
+    "anomaly_score": -0.09259038442552048
+  },
+  {
+    "row_id": 747,
+    "prediction": 0,
+    "anomaly_score": -0.10309297570890491
+  },
+  {
+    "row_id": 748,
+    "prediction": 0,
+    "anomaly_score": -0.10265683176963347
+  },
+  {
+    "row_id": 749,
+    "prediction": 0,
+    "anomaly_score": -0.08659597318481038
+  },
+  {
+    "row_id": 750,
+    "prediction": 0,
+    "anomaly_score": -0.10612188506286768
+  },
+  {
+    "row_id": 751,
+    "prediction": 0,
+    "anomaly_score": -0.10240169267673366
+  },
+  {
+    "row_id": 752,
+    "prediction": 0,
+    "anomaly_score": -0.10427083583991248
+  },
+  {
+    "row_id": 753,
+    "prediction": 0,
+    "anomaly_score": -0.07557833987523577
+  },
+  {
+    "row_id": 754,
+    "prediction": 0,
+    "anomaly_score": -0.08775142349482823
+  },
+  {
+    "row_id": 755,
+    "prediction": 0,
+    "anomaly_score": -0.08544679642711167
+  },
+  {
+    "row_id": 756,
+    "prediction": 0,
+    "anomaly_score": -0.10797610128012763
+  },
+  {
+    "row_id": 757,
+    "prediction": 0,
+    "anomaly_score": -0.09899678045017113
+  },
+  {
+    "row_id": 758,
+    "prediction": 0,
+    "anomaly_score": -0.08078523024336154
+  },
+  {
+    "row_id": 759,
+    "prediction": 0,
+    "anomaly_score": -0.09480482015126351
+  },
+  {
+    "row_id": 760,
+    "prediction": 0,
+    "anomaly_score": -0.09829167875872796
+  },
+  {
+    "row_id": 761,
+    "prediction": 0,
+    "anomaly_score": -0.10913986456461378
+  },
+  {
+    "row_id": 762,
+    "prediction": 0,
+    "anomaly_score": -0.11328178562376268
+  },
+  {
+    "row_id": 763,
+    "prediction": 0,
+    "anomaly_score": -0.08765989699808446
+  },
+  {
+    "row_id": 764,
+    "prediction": 0,
+    "anomaly_score": -0.08264034041175089
+  },
+  {
+    "row_id": 765,
+    "prediction": 0,
+    "anomaly_score": -0.11122861788984761
+  },
+  {
+    "row_id": 766,
+    "prediction": 0,
+    "anomaly_score": -0.10554855379396128
+  },
+  {
+    "row_id": 767,
+    "prediction": 0,
+    "anomaly_score": -0.0919590443336073
+  },
+  {
+    "row_id": 768,
+    "prediction": 0,
+    "anomaly_score": -0.08957925533774497
+  },
+  {
+    "row_id": 769,
+    "prediction": 0,
+    "anomaly_score": -0.07442758153972884
+  },
+  {
+    "row_id": 770,
+    "prediction": 0,
+    "anomaly_score": -0.0907049500193195
+  },
+  {
+    "row_id": 771,
+    "prediction": 0,
+    "anomaly_score": -0.10644284396181386
+  },
+  {
+    "row_id": 772,
+    "prediction": 0,
+    "anomaly_score": -0.09141364670221747
+  },
+  {
+    "row_id": 773,
+    "prediction": 0,
+    "anomaly_score": -0.10370342989255443
+  },
+  {
+    "row_id": 774,
+    "prediction": 0,
+    "anomaly_score": -0.09364077723968167
+  },
+  {
+    "row_id": 775,
+    "prediction": 0,
+    "anomaly_score": -0.08944349755589204
+  },
+  {
+    "row_id": 776,
+    "prediction": 0,
+    "anomaly_score": -0.12429080418510635
+  },
+  {
+    "row_id": 777,
+    "prediction": 0,
+    "anomaly_score": -0.1129821080942312
+  },
+  {
+    "row_id": 778,
+    "prediction": 0,
+    "anomaly_score": -0.09383136866009395
+  },
+  {
+    "row_id": 779,
+    "prediction": 0,
+    "anomaly_score": -0.07844314426154786
+  },
+  {
+    "row_id": 780,
+    "prediction": 0,
+    "anomaly_score": -0.08264403649352564
+  },
+  {
+    "row_id": 781,
+    "prediction": 0,
+    "anomaly_score": -0.0954146285837712
+  },
+  {
+    "row_id": 782,
+    "prediction": 0,
+    "anomaly_score": -0.08224542359285708
+  },
+  {
+    "row_id": 783,
+    "prediction": 0,
+    "anomaly_score": -0.07682536727961686
+  }
+]
