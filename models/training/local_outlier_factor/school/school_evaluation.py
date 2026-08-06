@@ -27,8 +27,8 @@ BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parents[3]
 MODEL_DIR = BASE_DIR.parents[1]
 
-MODEL_PATH = MODEL_DIR / "local_outlier_factor" / "models" / "local_outlier_factor_transistor.pkl"
-TEST_PATH = PROJECT_ROOT / "datasets" / "data" / "split" / "transistor_test.csv"
+MODEL_PATH = MODEL_DIR / "local_outlier_factor" / "models" / "local_outlier_factor_school.pkl"
+TEST_PATH = PROJECT_ROOT / "datasets" / "data" / "split" / "school_test.csv"
 
 REPORTS_DIR = BASE_DIR / "reports"
 IMAGES_DIR = REPORTS_DIR / "images"
@@ -37,6 +37,7 @@ REPORT_FILE = REPORTS_DIR / "report.json"
 
 MODEL_NAME = "Local Outlier Factor (LOF) - School Dataset"
 LABEL_COLUMNS_CANDIDATES = [
+    "final_result",
     "Pass/Fail",
     "Class",
     "Label",
@@ -48,33 +49,42 @@ LABEL_COLUMNS_CANDIDATES = [
 
 
 def normalize_labels(y):
-    y = pd.Series(y).astype(str).str.strip()
+    y = pd.Series(y).astype(str).str.strip().str.lower()
+
     mapping = {
+        # Numeric
         "0": 0,
         "1": 1,
+
+        # Boolean
         "false": 0,
         "true": 1,
         "no": 0,
         "yes": 1,
+
+        # Generic datasets
         "normal": 0,
-        "anomaly": 1,
         "benign": 0,
-        "fraud": 1,
         "non-fraud": 0,
         "nonfraud": 0,
+
+        "anomaly": 1,
+        "fraud": 1,
         "attack": 1,
-        "negative": 0,
-        "positive": 1,
+
+        # OULAD
+        "pass": 0,
+        "distinction": 0,
+        "fail": 1,
+        "withdrawn": 1,
     }
-    values = set(y.dropna())
-    if values.issubset(mapping.keys()):
-        return y.map(mapping).astype(int)
-    if values.issubset({"-1", "1"}):
-        return (y == "1").astype(int)
-    try:
-        return y.astype(int)
-    except ValueError as exc:
-        raise ValueError(f"Unsupported label values: {sorted(values)}") from exc
+
+    unknown = sorted(set(y.unique()) - set(mapping.keys()))
+
+    if unknown:
+        raise ValueError(f"Unsupported label values: {unknown}")
+
+    return y.map(mapping).astype(int)
 
 
 def find_label_column(df, feature_columns):
