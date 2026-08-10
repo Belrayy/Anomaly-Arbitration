@@ -17,3 +17,4 @@ models/training/svm/school/reports
 models/training/isolation_forest/cyber/reports
 models/training/local_outlier_factor/cyber/reports
 models/training/svm/cyber/reports
+reports/*/output

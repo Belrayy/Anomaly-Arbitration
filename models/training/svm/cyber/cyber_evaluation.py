@@ -27,7 +27,10 @@ warnings.filterwarnings("ignore")
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parents[3]
 
-MODEL_PATH = BASE_DIR.parent / "models" / "isolation_forest_cyber.pkl"
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parents[3]
+
+MODEL_PATH = BASE_DIR.parent / "models" / "sgd_one_class_svm_cyber.pkl"
 TEST_PATH = PROJECT_ROOT / "datasets" / "data" / "split" / "cyber_test.csv"
 
 REPORTS_DIR = BASE_DIR / "reports"
@@ -35,7 +38,7 @@ IMAGES_DIR = REPORTS_DIR / "images"
 PREDICTIONS_FILE = REPORTS_DIR / "predictions.csv"
 REPORT_FILE = REPORTS_DIR / "report.json"
 
-MODEL_NAME = "Isolation Forest"
+MODEL_NAME = "SGD One-Class SVM"
 LABEL_COLUMN = "Label"
 
 

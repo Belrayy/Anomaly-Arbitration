@@ -6,12 +6,12 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import SGDOneClassSVM
 
-TRAIN_FILE = "../../../../datasets/data/split/network_train.csv"
+TRAIN_FILE = "../../../../datasets/data/split/cyber_train.csv"
 
 MODEL_DIR = "../models"
 MODEL_FILE = os.path.join(
     MODEL_DIR,
-    "sgd_one_class_svm_network.pkl"
+    "sgd_one_class_svm_cyber.pkl"
 )
 
 NU = 0.05

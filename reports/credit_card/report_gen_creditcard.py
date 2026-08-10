@@ -209,7 +209,7 @@ latex_lines.append(r"\titleformat{\subsection}{\color{primaryblue}\normalfont\la
 latex_lines.append("")
 latex_lines.append(r"\pagestyle{fancy}")
 latex_lines.append(r"\fancyhf{}")
-latex_lines.append(r"\fancyhead[L]{\small\textcolor{primaryblue}{Anomaly Detection Report}}")
+latex_lines.append(r"\fancyhead[L]{\small\textcolor{primaryblue}{Anomaly Detection-Credit Card Report}}")
 latex_lines.append(r"\fancyhead[R]{\small\thepage}")
 latex_lines.append(r"\renewcommand{\headrulewidth}{0.4pt}")
 latex_lines.append("")
