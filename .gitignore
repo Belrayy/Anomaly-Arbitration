@@ -14,3 +14,6 @@ models/training/svm/transistor/reports
 models/training/isolation_forest/school/reports
 models/training/local_outlier_factor/school/reports
 models/training/svm/school/reports
+models/training/isolation_forest/cyber/reports
+models/training/local_outlier_factor/cyber/reports
+models/training/svm/cyber/reports
