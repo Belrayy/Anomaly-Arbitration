@@ -1,156 +1,55 @@
-import argparse
 import subprocess
 import sys
 from pathlib import Path
 
 
-def compile_tex(
-    tex_file: str,
-    engine: str = "latexmk",
-    bibtex: bool = False,
-    output_dir: str | None = None,
-    clean: bool = False,
-) -> int:
-    """
-    Compile a .tex file into a PDF.
+def compile_tex_to_pdf(tex_path: str) -> Path:
+    tex_path = Path(tex_path).resolve()
 
-    Parameters
-    ----------
-    tex_file : str
-        Path to the .tex file.
-    engine : str
-        LaTeX engine to use ('pdflatex', 'xelatex', 'lualatex', or 'latexmk').
-    bibtex : bool
-        Whether to run BibTeX (only relevant when engine is not 'latexmk').
-    output_dir : str, optional
-        Directory for auxiliary/output files. If using latexmk, this will be
-        passed as -outdir.
-    clean : bool
-        Remove auxiliary files after compilation (latexmk -c or engine specific).
-
-    Returns
-    -------
-    int
-        Return code of the compilation process.
-    """
-    tex_path = Path(tex_file).resolve()
     if not tex_path.exists():
-        print(f"Error: File not found – {tex_path}", file=sys.stderr)
-        return 1
+        raise FileNotFoundError(f"No such file: {tex_path}")
+    if tex_path.suffix.lower() != ".tex":
+        raise ValueError(f"Expected a .tex file, got: {tex_path.name}")
 
-    if tex_path.suffix != ".tex":
-        print("Warning: Input file does not have a .tex extension.", file=sys.stderr)
+    output_dir = tex_path.parent / tex_path.stem
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    if engine == "latexmk":
-        cmd = ["latexmk", "-pdf", f"-pdflatex={engine}"]
-        cmd = ["latexmk", "-pdf"]
-        if output_dir:
-            cmd.extend(["-outdir", output_dir])
-        if clean:
-            cmd.append("-c")  
-        cmd.append(str(tex_path))
-    else:
-        cmd = [engine, "-interaction=nonstopmode", "-halt-on-error"]
-        if output_dir:
-            cmd.extend(["-output-directory", output_dir])
-        cmd.append(str(tex_path))
+    cmd = [
+        "pdflatex",
+        "-interaction=nonstopmode",   
+        "-halt-on-error",             
+        f"-output-directory={output_dir}",
+        str(tex_path),
+    ]
 
-        if bibtex and not clean:
-            bib_cmd = ["bibtex", tex_path.stem]
-            pass  
-
-    print(f"Running: {' '.join(cmd)}")
-    try:
-        result = subprocess.run(cmd, capture_output=False, text=True)
-        if result.returncode != 0:
-            print("Compilation failed.", file=sys.stderr)
-        else:
-            print("Compilation successful.")
-        return result.returncode
-    except FileNotFoundError:
-        print(
-            f"Error: '{engine}' not found. Is a LaTeX distribution installed and in PATH?",
-            file=sys.stderr,
+    result = None
+    for _ in range(2):
+        result = subprocess.run(
+            cmd,
+            cwd=tex_path.parent,
+            capture_output=True,
+            text=True,
         )
-        return 1
 
+    pdf_path = output_dir / (tex_path.stem + ".pdf")
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="Compile a LaTeX .tex file to PDF."
-    )
-    parser.add_argument("texfile", help="Path to the .tex file")
-    parser.add_argument(
-        "--engine",
-        choices=["pdflatex", "xelatex", "lualatex", "latexmk"],
-        default="latexmk",
-        help="LaTeX engine to use (default: latexmk).",
-    )
-    parser.add_argument(
-        "--bibtex",
-        action="store_true",
-        help="Run BibTeX after the first compilation (ignored with latexmk).",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default=None,
-        help="Directory for output files (aux, log, pdf, etc.).",
-    )
-    parser.add_argument(
-        "--clean",
-        action="store_true",
-        help="Remove auxiliary files after successful compilation (latexmk -c).",
-    )
+    if result.returncode != 0 or not pdf_path.exists():
+        print("---- pdflatex output (tail) ----")
+        print(result.stdout[-3000:])
+        log_path = output_dir / (tex_path.stem + ".log")
+        raise RuntimeError(f"LaTeX compilation failed. See log: {log_path}")
 
-    args = parser.parse_args()
-
-    if args.engine != "latexmk" and args.bibtex:
-        print("Multi-step compilation: pdflatex → bibtex → pdflatex × 2")
-        tex_path = Path(args.texfile).resolve()
-        base = tex_path.stem
-        out_dir = args.output_dir or "."
-
-        def run(cmd, step_name):
-            print(f"\n--- {step_name} ---")
-            result = subprocess.run(cmd, text=True)
-            if result.returncode != 0:
-                print(f"{step_name} failed.", file=sys.stderr)
-                sys.exit(result.returncode)
-
-        run(
-            [args.engine, "-interaction=nonstopmode", "-halt-on-error"]
-            + (["-output-directory", out_dir] if out_dir else [])
-            + [str(tex_path)],
-            "First pdflatex",
-        )
-        aux_path = Path(out_dir) / base if out_dir else Path(base)
-        run(["bibtex", str(aux_path)], "BibTeX")
-        # 3 & 4. Two more pdflatex runs
-        for i in range(2):
-            run(
-                [args.engine, "-interaction=nonstopmode", "-halt-on-error"]
-                + (["-output-directory", out_dir] if out_dir else [])
-                + [str(tex_path)],
-                f"pdflatex run {i+2}",
-            )
-        if args.clean:
-            print("Cleaning auxiliary files...")
-            for ext in [".aux", ".log", ".out", ".toc", ".bbl", ".blg"]:
-                f = Path(out_dir) / (base + ext)
-                if f.exists():
-                    f.unlink()
-        print("Multi-step compilation finished.")
-        sys.exit(0)
-
-    return_code = compile_tex(
-        tex_file=args.texfile,
-        engine=args.engine,
-        bibtex=args.bibtex,
-        output_dir=args.output_dir,
-        clean=args.clean,
-    )
-    sys.exit(return_code)
+    return pdf_path
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) != 2:
+        print("Usage: py r.py <file.tex>")
+        sys.exit(1)
+
+    try:
+        pdf = compile_tex_to_pdf(sys.argv[1])
+        print(f"PDF created at: {pdf}")
+    except Exception as e:
+        print(f"Error: {e}")
+        sys.exit(1)
