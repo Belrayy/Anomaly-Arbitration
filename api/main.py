@@ -33,9 +33,9 @@ OUTPUT_FILE_SCHOOL_LOF = PROJECT_ROOT / "Predictions" / "predictions_school_lof.
 OUTPUT_FILE_SCHOOL_SVM = PROJECT_ROOT / "Predictions" / "predictions_school_svm.json"
 
 #Credit Card
-MODEL_PATH_CREDITCARD_IF = PROJECT_ROOT / "models" / "training" / "isolation_forest" / "models" / "isolation_forest_credit_card.pkl"
-MODEL_PATH_CREDITCARD_LOF = PROJECT_ROOT / "models" / "training" / "local_outlier_factor" / "models" / "local_outlier_factor_credit_card.pkl"
-MODEL_PATH_CREDITCARD_SVM = PROJECT_ROOT / "models" / "training" / "svm" / "models" / "sgd_one_class_svm_credit_card.pkl"
+MODEL_PATH_CREDITCARD_IF = PROJECT_ROOT / "models" / "training" / "isolation_forest" / "models" / "isolation_forest_creditcard.pkl"
+MODEL_PATH_CREDITCARD_LOF = PROJECT_ROOT / "models" / "training" / "local_outlier_factor" / "models" / "local_outlier_factor_creditcard.pkl"
+MODEL_PATH_CREDITCARD_SVM = PROJECT_ROOT / "models" / "training" / "svm" / "models" / "sgd_one_class_svm_creditcard.pkl"
 
 OUTPUT_FILE_CREDITCARD_IF = PROJECT_ROOT / "Predictions" / "predictions_creditcard_if.json"
 OUTPUT_FILE_CREDITCARD_LOF = PROJECT_ROOT / "Predictions" / "predictions_creditcard_lof.json"
@@ -53,7 +53,7 @@ OUTPUT_FILE_TRANSISTOR_SVM = PROJECT_ROOT / "Predictions" / "predictions_transis
 
 INFERENCE_CONFIG = {
     "cyber-if": {
-        "module": PROJECT_ROOT / "models" / "inference" / "cyber" / "cyber_inference_isolation_forest.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "cyber" / "cyber_inference_isolation_forest.py",
         "function": "infer",
         "model_path": MODEL_PATH_CYBER_IF,
         "output_file": OUTPUT_FILE_CYBER_IF,
@@ -132,7 +132,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "cyber-lof": {
-        "module": PROJECT_ROOT / "models" / "inference" / "cyber" / "cyber_inference_local_outlier_factor.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "cyber" / "cyber_inference_local_outlier_factor.py",
         "function": "infer",
         "model_path": MODEL_PATH_CYBER_LOF,
         "output_file": OUTPUT_FILE_CYBER_LOF,
@@ -211,7 +211,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "cyber-svm": {
-        "module": PROJECT_ROOT / "models" / "inference" / "cyber" / "cyber_inference_svm.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "cyber" / "cyber_inference_svm.py",
         "function": "infer",
         "model_path": MODEL_PATH_CYBER_SVM,
         "output_file": OUTPUT_FILE_CYBER_SVM,
@@ -290,7 +290,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "school-if": {
-        "module": PROJECT_ROOT / "models" / "inference" / "school" / "school_inference_isolation_forest.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "school" / "school_inference_isolation_forest.py",
         "function": "infer",
         "model_path": MODEL_PATH_SCHOOL_IF,
         "output_file": OUTPUT_FILE_SCHOOL_IF,
@@ -358,7 +358,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "school-lof": {
-        "module": PROJECT_ROOT / "models" / "inference" / "school" / "school_inference_local_outlier_factor.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "school" / "school_inference_local_outlier_factor.py",
         "function": "infer",
         "model_path": MODEL_PATH_SCHOOL_LOF,
         "output_file": OUTPUT_FILE_SCHOOL_LOF,
@@ -426,7 +426,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "school-svm": {
-        "module": PROJECT_ROOT / "models" / "inference" / "school" / "school_inference_svm.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "school" / "school_inference_svm.py",
         "function": "infer",
         "model_path": MODEL_PATH_SCHOOL_SVM,
         "output_file": OUTPUT_FILE_SCHOOL_SVM,
@@ -494,7 +494,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "creditcard-if": {
-        "module": PROJECT_ROOT / "models" / "inference" / "credit_card" / "creditcard_inference_isolation_forest.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "credit_card" / "creditcard_inference_isolation_forest.py",
         "function": "infer",
         "model_path": MODEL_PATH_CREDITCARD_IF,
         "output_file": OUTPUT_FILE_CREDITCARD_IF,
@@ -513,7 +513,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "creditcard-lof": {
-        "module": PROJECT_ROOT / "models" / "inference" / "credit_card" / "creditcard_inference_local_outlier_factor.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "credit_card" / "creditcard_inference_local_outlier_factor.py",
         "function": "infer",
         "model_path": MODEL_PATH_CREDITCARD_LOF,
         "output_file": OUTPUT_FILE_CREDITCARD_LOF,
@@ -532,7 +532,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "creditcard-svm": {
-        "module": PROJECT_ROOT / "models" / "inference" / "credit_card" / "creditcard_inference_svm.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "credit_card" / "creditcard_inference_svm.py",
         "function": "infer",
         "model_path": MODEL_PATH_CREDITCARD_SVM,
         "output_file": OUTPUT_FILE_CREDITCARD_SVM,
@@ -551,7 +551,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "transistor-if": {
-        "module": PROJECT_ROOT / "models" / "inference" / "transistor" / "transistor_inference_isolation_forest.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "transistor" / "transistor_inference_isolation_forest.py",
         "function": "infer",
         "model_path": MODEL_PATH_TRANSISTOR_IF,
         "output_file": OUTPUT_FILE_TRANSISTOR_IF,
@@ -560,7 +560,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "transistor-lof": {
-        "module": PROJECT_ROOT / "models" / "inference" / "transistor" / "transistor_inference_local_outlier_factor.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "transistor" / "transistor_inference_local_outlier_factor.py",
         "function": "infer",
         "model_path": MODEL_PATH_TRANSISTOR_LOF,
         "output_file": OUTPUT_FILE_TRANSISTOR_LOF,
@@ -569,7 +569,7 @@ INFERENCE_CONFIG = {
         ]
     },
     "transistor-if": {
-        "module": PROJECT_ROOT / "models" / "inference" / "transistor" / "transistor_inference_svm.py",
+        "file": PROJECT_ROOT / "models" / "inference" / "transistor" / "transistor_inference_svm.py",
         "function": "infer",
         "model_path": MODEL_PATH_TRANSISTOR_SVM,
         "output_file": OUTPUT_FILE_TRANSISTOR_SVM,

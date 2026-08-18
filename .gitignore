@@ -21,3 +21,7 @@ reports/*/output
 models/inference/cyber/predictions
 api/__pycache__/
 Predictions/
+models/inference/credit_card/__pycache__/
+models/inference/cyber/__pycache__/
+models/inference/school/__pycache__/
+models/inference/transistor/__pycache__/
