@@ -103,10 +103,6 @@ sample_size = min(200, len(df))
 df = df.sample(n=sample_size, random_state=RANDOM_STATE).copy()
 print(f"Random sample shape: {df.shape}")
 
-if "Label" in df.columns:
-    print("\nLabel removed from final inference-style output.")
-    df = df.drop(columns=["Label"])
-
 output_dir = os.path.dirname(OUTPUT_FILE)
 os.makedirs(output_dir, exist_ok=True)
 
