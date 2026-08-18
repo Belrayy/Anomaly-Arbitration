@@ -19,3 +19,4 @@ models/training/local_outlier_factor/cyber/reports
 models/training/svm/cyber/reports
 reports/*/output
 models/inference/cyber/predictions
+api/__pycache__/
