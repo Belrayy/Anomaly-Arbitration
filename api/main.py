@@ -1,9 +1,12 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.responses import Response
 from pathlib import Path
 import tempfile
 import os
 import json
 import importlib
+import subprocess
+import sys
 import pandas as pd
 
 app = FastAPI(
@@ -579,6 +582,16 @@ INFERENCE_CONFIG = {
     },
 }
 
+REPORT_CONFIG = {
+    "creditcard": PROJECT_ROOT / "reports" / "credit_card" / "report_gen_creditcard.py",
+    "cyber": PROJECT_ROOT / "reports" / "cyber" / "report_gen_cyber.py",
+    "school": PROJECT_ROOT / "reports" / "school" / "report_gen_school.py",
+    "transistor": PROJECT_ROOT / "reports" / "transistor" / "report_gen_transistor.py",
+}
+
+
+TEX_COMPILE_SCRIPT = PROJECT_ROOT / "reports" / "tex_compile.py"
+
 
 def load_inference_function(config):
     module_name = config["file"].stem
@@ -721,6 +734,112 @@ async def process_prediction(model_name, file):
             os.remove(temp_path)
 
 
+async def process_report(report_name, file):
+    if report_name not in REPORT_CONFIG:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Unknown report: {report_name}"
+        )
+
+    if not file.filename or not file.filename.lower().endswith(".json"):
+        raise HTTPException(
+            status_code=400,
+            detail="Only JSON files are accepted."
+        )
+
+    file_content = await file.read()
+
+    if not file_content:
+        raise HTTPException(
+            status_code=400,
+            detail="The uploaded JSON file is empty."
+        )
+
+    try:
+        json.loads(file_content)
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unable to read JSON: {str(error)}"
+        )
+
+    try:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_dir_path = Path(temp_dir)
+            input_path = temp_dir_path / "predictions.json"
+            output_dir = temp_dir_path / "report_output"
+            input_path.write_bytes(file_content)
+
+            generator_result = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPORT_CONFIG[report_name]),
+                    str(input_path),
+                    str(output_dir),
+                ],
+                cwd=PROJECT_ROOT,
+                capture_output=True,
+                text=True,
+            )
+
+            if generator_result.returncode != 0:
+                raise RuntimeError(
+                    generator_result.stderr or generator_result.stdout
+                )
+
+            tex_files = list(output_dir.glob("*.tex"))
+            if len(tex_files) != 1:
+                raise FileNotFoundError(
+                    "The report generator did not create exactly one TeX file."
+                )
+
+            compile_result = subprocess.run(
+                [
+                    sys.executable,
+                    str(TEX_COMPILE_SCRIPT),
+                    str(tex_files[0]),
+                ],
+                cwd=PROJECT_ROOT,
+                capture_output=True,
+                text=True,
+            )
+
+            if compile_result.returncode != 0:
+                raise RuntimeError(
+                    compile_result.stderr or compile_result.stdout
+                )
+
+            pdf_path = output_dir / tex_files[0].stem / f"{tex_files[0].stem}.pdf"
+            if not pdf_path.exists():
+                raise FileNotFoundError(
+                    "TeX compilation did not create the expected PDF file."
+                )
+
+            pdf_content = pdf_path.read_bytes()
+            generated_suffix = tex_files[0].stem.removeprefix(
+                "report_predictions_"
+            )
+            download_filename = (
+                f"report_predictions_{report_name}_{generated_suffix}.pdf"
+            )
+
+    except HTTPException:
+        raise
+    except Exception as error:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Report generation failed: {str(error)}"
+        )
+
+    return Response(
+        content=pdf_content,
+        media_type="application/pdf",
+        headers={
+            "Content-Disposition": f'attachment; filename="{download_filename}"'
+        },
+    )
+
+
 @app.get("/")
 def root():
     return {
@@ -729,6 +848,9 @@ def root():
         "endpoints": [
             f"/predict/{model_name}"
             for model_name in INFERENCE_CONFIG
+        ] + [
+            f"/report/{report_name}"
+            for report_name in REPORT_CONFIG
         ]
     }
 
@@ -740,9 +862,21 @@ def models():
     }
 
 
+@app.get("/reports")
+def reports():
+    return {
+        "reports": list(REPORT_CONFIG.keys())
+    }
+
+
 @app.post("/predict/{model_name}")
 async def predict(model_name: str, file: UploadFile = File(...)):
     return await process_prediction(model_name, file)
+
+
+@app.post("/report/{report_name}")
+async def report(report_name: str, file: UploadFile = File(...)):
+    return await process_report(report_name, file)
 
 @app.post("/test-upload")
 async def test_upload(file: UploadFile = File(...)):
