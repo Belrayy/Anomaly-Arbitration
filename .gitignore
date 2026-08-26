@@ -1,4 +1,6 @@
 .env
+.venv
+post.txt
 datasets/data
 models/training/isolation_forest/creditcard/reports
 models/training/local_outlier_factor/models
