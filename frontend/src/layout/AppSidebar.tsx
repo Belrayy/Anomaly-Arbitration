@@ -21,14 +21,12 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   {
-    icon: <GridIcon />,
-    name: "Dashboard",
-    subItems: [{ name: "Ecommerce", path: "/", pro: false }],
-  },
-  {
     name: "Anomaly Arbitration",
     icon: <ListIcon />,
-    subItems: [{ name: "Estimate & Generate Reports", path: "/form-elements", pro: false }],
+    subItems: [
+      { name: "Estimate Anomalies", path: "/form-elements", pro: false },
+      { name: "Generate Reports", path: "/form-reports", pro: false },
+    ],
   },
   {
     name: "Reports",

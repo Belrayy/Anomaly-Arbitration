@@ -11,7 +11,7 @@ const DropzoneComponent: React.FC = () => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     accept: {
-      "text/csv": [".csv"],
+      "text/json": [".json"],
     },
   });
   return (
@@ -57,7 +57,7 @@ const DropzoneComponent: React.FC = () => {
             </h4>
 
             <span className=" text-center mb-5 block w-full max-w-[290px] text-sm text-gray-700 dark:text-gray-400">
-              Drag and drop your CSV file here or browse
+              Drag and drop your JSON file here or browse
             </span>
 
             <span className="font-medium underline text-theme-sm text-brand-500">

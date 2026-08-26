@@ -14,13 +14,7 @@ export default function SelectInputs() {
   const handleSelectChange = (value: string) => {
     console.log("Selected value:", value);
   };
-  const [selectedValues, setSelectedValues] = useState<string[]>([]);
 
-  const multiOptions = [
-    { value: "1", text: "Isolation Forest", selected: false },
-    { value: "2", text: "Local Outlier Factor", selected: false },
-    { value: "3", text: "One-Class SVM", selected: false },
-  ];
   return (
     <ComponentCard title="Inputs Your Data">
       <div className="space-y-6">
@@ -32,17 +26,6 @@ export default function SelectInputs() {
             onChange={handleSelectChange}
             className="dark:bg-dark-900"
           />
-        </div>
-        <div>
-          <MultiSelect
-            label="Multiple Select Options"
-            options={multiOptions}
-            defaultSelected={["1", "3"]}
-            onChange={(values) => setSelectedValues(values)}
-          />
-          <p className="sr-only">
-            Selected Values: {selectedValues.join(", ")}
-          </p>
         </div>
       </div>
     </ComponentCard>
