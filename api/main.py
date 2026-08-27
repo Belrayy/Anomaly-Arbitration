@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException, Depends
 from fastapi.responses import Response
 from pathlib import Path
 import tempfile
@@ -8,6 +8,10 @@ import importlib
 import subprocess
 import sys
 import pandas as pd
+
+from sqlalchemy import text
+from sqlalchemy.orm import Session
+from database import get_db
 
 app = FastAPI(
     title="Anomaly Arbitration API",
@@ -883,4 +887,13 @@ async def test_upload(file: UploadFile = File(...)):
     return {
         "filename": file.filename,
         "content_type": file.content_type
+    }
+
+@app.post("/db-test")
+def db_test(db: Session = Depends(get_db)):
+    result = db.execute(text("SELECT 1")).scalar()
+
+    return {
+        "database": "connected",
+        "result": result
     }
