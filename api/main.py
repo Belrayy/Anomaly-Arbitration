@@ -13,10 +13,14 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 from database import get_db
 
+from auth.routes import router as auth_router
+
 app = FastAPI(
     title="Anomaly Arbitration API",
     version="1.0.0"
 )
+
+app.include_router(auth_router)
 
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
