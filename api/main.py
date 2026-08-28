@@ -1,5 +1,5 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException, Depends
-from fastapi.responses import Response
+from fastapi.responses import FileResponse, Response
 from pathlib import Path
 import tempfile
 import os
@@ -15,12 +15,24 @@ from database import get_db
 
 from auth.routes import router as auth_router
 
+from fastapi import Depends, File, UploadFile
+from database.models import User, Report
+from auth.dependencies import get_current_user
+
+from reports.storage import save_report
+from reports.routes import router as reports_router
+
+from datetime import datetime
+
+
+
 app = FastAPI(
     title="Anomaly Arbitration API",
     version="1.0.0"
 )
 
 app.include_router(auth_router)
+app.include_router(reports_router)
 
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent
@@ -61,6 +73,11 @@ OUTPUT_FILE_TRANSISTOR_IF = PROJECT_ROOT / "Predictions" / "predictions_transist
 OUTPUT_FILE_TRANSISTOR_LOF = PROJECT_ROOT / "Predictions" / "predictions_transistor_lof.json"
 OUTPUT_FILE_TRANSISTOR_SVM = PROJECT_ROOT / "Predictions" / "predictions_transistor_svm.json"
 
+ALGORITHM_NAMES = {
+    "if": "isolation_forest",
+    "lof": "local_outlier_factor",
+    "svm": "one_class_svm"
+}
 
 INFERENCE_CONFIG = {
     "cyber-if": {
@@ -742,7 +759,12 @@ async def process_prediction(model_name, file):
             os.remove(temp_path)
 
 
-async def process_report(report_name, file):
+async def process_report(
+    report_name,
+    file,
+    current_user,
+    db
+):
     if report_name not in REPORT_CONFIG:
         raise HTTPException(
             status_code=404,
@@ -776,6 +798,7 @@ async def process_report(report_name, file):
             temp_dir_path = Path(temp_dir)
             input_path = temp_dir_path / "predictions.json"
             output_dir = temp_dir_path / "report_output"
+
             input_path.write_bytes(file_content)
 
             generator_result = subprocess.run(
@@ -796,6 +819,7 @@ async def process_report(report_name, file):
                 )
 
             tex_files = list(output_dir.glob("*.tex"))
+
             if len(tex_files) != 1:
                 raise FileNotFoundError(
                     "The report generator did not create exactly one TeX file."
@@ -817,36 +841,76 @@ async def process_report(report_name, file):
                     compile_result.stderr or compile_result.stdout
                 )
 
-            pdf_path = output_dir / tex_files[0].stem / f"{tex_files[0].stem}.pdf"
+            pdf_path = (
+                output_dir
+                / tex_files[0].stem
+                / f"{tex_files[0].stem}.pdf"
+            )
+
             if not pdf_path.exists():
                 raise FileNotFoundError(
                     "TeX compilation did not create the expected PDF file."
                 )
 
             pdf_content = pdf_path.read_bytes()
+
             generated_suffix = tex_files[0].stem.removeprefix(
                 "report_predictions_"
             )
+
             download_filename = (
                 f"report_predictions_{report_name}_{generated_suffix}.pdf"
             )
 
     except HTTPException:
         raise
+
     except Exception as error:
         raise HTTPException(
             status_code=500,
             detail=f"Report generation failed: {str(error)}"
         )
 
+    try:
+        saved_path = save_report(
+            current_user.id,
+            download_filename,
+            pdf_content
+        )
+
+        model_name, algorithm_code = report_name.rsplit("-", 1)
+
+        algorithm_name = ALGORITHM_NAMES.get(algorithm_code,algorithm_code)
+
+        report = Report(
+            user_id=current_user.id,
+            filename=download_filename,
+            file_path=str(saved_path),
+            model=model_name,
+            algorithm=algorithm_name
+        )
+
+        db.add(report)
+        db.commit()
+        db.refresh(report)
+
+    except Exception as error:
+        db.rollback()
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to save report: {str(error)}"
+        )
+
     return Response(
         content=pdf_content,
         media_type="application/pdf",
         headers={
-            "Content-Disposition": f'attachment; filename="{download_filename}"'
+            "Content-Disposition": (
+                f'attachment; filename="{download_filename}"'
+            )
         },
     )
-
 
 @app.get("/")
 def root():
@@ -870,7 +934,7 @@ def models():
     }
 
 
-@app.get("/reports")
+@app.get("/report-types")
 def reports():
     return {
         "reports": list(REPORT_CONFIG.keys())
@@ -878,12 +942,12 @@ def reports():
 
 
 @app.post("/predict/{model_name}")
-async def predict(model_name: str, file: UploadFile = File(...)):
+async def predict(model_name: str, file: UploadFile = File(...),current_user: User = Depends(get_current_user)):
     return await process_prediction(model_name, file)
 
 
 @app.post("/report/{report_name}")
-async def report(report_name: str, file: UploadFile = File(...)):
+async def report(report_name: str, file: UploadFile = File(...),current_user: User = Depends(get_current_user)):
     return await process_report(report_name, file)
 
 @app.post("/test-upload")
@@ -901,3 +965,61 @@ def db_test(db: Session = Depends(get_db)):
         "database": "connected",
         "result": result
     }
+
+@app.get("")
+def get_my_reports(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    reports = (
+        db.query(Report)
+        .filter(Report.user_id == current_user.id)
+        .order_by(Report.created_at.desc())
+        .all()
+    )
+
+    return [
+        {
+            "id": report.id,
+            "filename": report.filename,
+            "model": report.model,
+            "algorithm": report.algorithm,
+            "created_at": report.created_at,
+        }
+        for report in reports
+    ]
+
+@app.get("/{report_id}")
+def download_report(
+    report_id: int,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    report = (
+        db.query(Report)
+        .filter(
+            Report.id == report_id,
+            Report.user_id == current_user.id
+        )
+        .first()
+    )
+
+    if not report:
+        raise HTTPException(
+            status_code=404,
+            detail="Report not found."
+        )
+
+    file_path = Path(report.file_path)
+
+    if not file_path.exists():
+        raise HTTPException(
+            status_code=404,
+            detail="Report file no longer exists."
+        )
+
+    return FileResponse(
+        path=file_path,
+        media_type="application/pdf",
+        filename=report.filename
+    )
