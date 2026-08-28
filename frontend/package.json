@@ -3,11 +3,13 @@
   "private": true,
   "version": "2.3.0",
   "type": "module",
+  "homepage": "/signin",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "react-scripts start"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.15",
@@ -29,6 +31,7 @@
     "react-dropzone": "^14.3.5",
     "react-helmet-async": "^2.0.5",
     "react-router": "^7.1.5",
+    "react-router-dom": "^7.18.3",
     "swiper": "^14.1.0",
     "tailwind-merge": "^3.0.1"
   },

@@ -1,4 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router";
+
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
 import NotFound from "./pages/OtherPage/NotFound";
@@ -19,16 +25,27 @@ import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
 import FormReports from "./pages/Forms/FormReports";
+import ProtectedRoute from "./components/common/ProtectedRoute";
 
 export default function App() {
   return (
-    <>
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          {/* Dashboard Layout */}
+    <Router>
+      <ScrollToTop />
+
+      <Routes>
+
+        {/* Protected Dashboard */}
+        <Route element={<ProtectedRoute />}>
+
           <Route element={<AppLayout />}>
-            <Route index path="/" element={<Home />} />
+
+            <Route
+              index
+              path="/"
+              element={<Navigate to="/dashboard" replace />}
+            />
+
+            <Route path="/dashboard" element={<Home />} />
 
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
@@ -42,7 +59,7 @@ export default function App() {
             {/* Tables */}
             <Route path="/basic-tables" element={<BasicTables />} />
 
-            {/* Ui Elements */}
+            {/* UI Elements */}
             <Route path="/alerts" element={<Alerts />} />
             <Route path="/avatars" element={<Avatars />} />
             <Route path="/badge" element={<Badges />} />
@@ -53,16 +70,19 @@ export default function App() {
             {/* Charts */}
             <Route path="/line-chart" element={<LineChart />} />
             <Route path="/bar-chart" element={<BarChart />} />
+
           </Route>
 
-          {/* Auth Layout */}
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
+        </Route>
 
-          {/* Fallback Route */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-    </>
+        {/* Public Authentication */}
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+
+        {/* Fallback */}
+        <Route path="*" element={<NotFound />} />
+
+      </Routes>
+    </Router>
   );
 }
