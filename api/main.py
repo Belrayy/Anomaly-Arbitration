@@ -24,7 +24,7 @@ from reports.routes import router as reports_router
 
 from datetime import datetime
 
-
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Anomaly Arbitration API",
@@ -33,6 +33,17 @@ app = FastAPI(
 
 app.include_router(auth_router)
 app.include_router(reports_router)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 BASE_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = BASE_DIR.parent

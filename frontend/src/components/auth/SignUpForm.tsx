@@ -1,13 +1,80 @@
 import { useState } from "react";
-import { Link } from "react-router";
-import { ChevronLeftIcon, EyeCloseIcon, EyeIcon } from "../../icons";
+import { Link, useNavigate } from "react-router";
+import { EyeCloseIcon, EyeIcon } from "../../icons";
 import Label from "../form/Label";
 import Input from "../form/input/InputField";
 import Checkbox from "../form/input/Checkbox";
+import Button from "../ui/button/Button";
 
 export default function SignUpForm() {
+  const navigate = useNavigate();
+
   const [showPassword, setShowPassword] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    setError("");
+    setLoading(true);
+
+    if (!isChecked) {
+      setError("You must agree to the Terms and Conditions and Privacy Policy");
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "http://127.0.0.1:8000/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username: email,
+            email: email,
+            password: password,
+            first_name: firstName,
+            last_name: lastName,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        let message = "Unable to create account.";
+
+        if (typeof data.detail === "string") {
+          message = data.detail;
+        } else if (data.detail) {
+          message = JSON.stringify(data.detail);
+        }
+        throw new Error(message);
+      }
+
+      localStorage.setItem("token", data.access_token);
+      navigate("/profile");
+    } catch (err) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("Unable to connect to the server.");
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div className="flex flex-col flex-1 w-full overflow-y-auto lg:w-1/2 no-scrollbar">
       <div className="w-full max-w-md mx-auto mb-5 sm:pt-10">
@@ -23,7 +90,7 @@ export default function SignUpForm() {
             </p>
           </div>
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="space-y-5">
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   {/* <!-- First Name --> */}
@@ -33,9 +100,9 @@ export default function SignUpForm() {
                     </Label>
                     <Input
                       type="text"
-                      id="fname"
-                      name="fname"
                       placeholder="Enter your first name"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
                     />
                   </div>
                   {/* <!-- Last Name --> */}
@@ -45,9 +112,9 @@ export default function SignUpForm() {
                     </Label>
                     <Input
                       type="text"
-                      id="lname"
-                      name="lname"
                       placeholder="Enter your last name"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                     />
                   </div>
                 </div>
@@ -58,9 +125,9 @@ export default function SignUpForm() {
                   </Label>
                   <Input
                     type="email"
-                    id="email"
-                    name="email"
                     placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 {/* <!-- Password --> */}
@@ -72,6 +139,8 @@ export default function SignUpForm() {
                     <Input
                       placeholder="Enter your password"
                       type={showPassword ? "text" : "password"}
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                     />
                     <span
                       onClick={() => setShowPassword(!showPassword)}
@@ -103,11 +172,24 @@ export default function SignUpForm() {
                     </span>
                   </p>
                 </div>
+
+                {/* Error */}
+                {error && (
+                  <div className="p-3 text-sm text-error-500 bg-error-50 rounded-lg">
+                    {error}
+                  </div>
+                )}
+
                 {/* <!-- Button --> */}
                 <div>
-                  <button className="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-600">
-                    Sign Up
-                  </button>
+                  <Button
+                    className="w-full"
+                    size="sm"
+                    disabled={loading}
+                    onClick={() => document.querySelector('form')?.requestSubmit()}
+                  >
+                    {loading ? "Creating account..." : "Sign Up"}
+                  </Button>
                 </div>
               </div>
             </form>

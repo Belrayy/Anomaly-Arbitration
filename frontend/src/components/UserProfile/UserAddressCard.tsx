@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useModal } from "../../hooks/useModal";
 import { Modal } from "../ui/modal";
 import Button from "../ui/button/Button";
@@ -5,11 +6,74 @@ import Input from "../form/input/InputField";
 import Label from "../form/Label";
 
 export default function UserAddressCard() {
-  const { isOpen, openModal, closeModal } = useModal();
-  const handleSave = () => {
-    // Handle save logic here
-    console.log("Saving changes...");
-    closeModal();
+  const { isOpen, closeModal } = useModal();
+  const [error, setError] = useState("");
+  const [country, setCountry] = useState("");
+  const [city, setCity] = useState("");
+  const [postalCode, setPostalCode] = useState("");
+  const [taxId, setTaxId] = useState("");
+  const [saveLoading, setSaveLoading] = useState(false);
+
+  useEffect(() => {
+    fetchAddressInfo();
+  }, []);
+
+  const fetchAddressInfo = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await fetch("http://127.0.0.1:8000/auth/profile", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch user info");
+      }
+
+      const data = await response.json();
+      setCountry(data.country || "");
+      setCity(data.city || "");
+      setPostalCode(data.postal_code || "");
+      setTaxId(data.tax_id || "");
+    } catch (err) {
+      if (err instanceof Error) {
+        setError(err.message);
+      }
+    }
+  };
+
+  const handleSave = async () => {
+    setSaveLoading(true);
+    try {
+      const token = localStorage.getItem("token");
+      const response = await fetch("http://127.0.0.1:8000/auth/update-profile", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          country: country,
+          city: city,
+          postal_code: postalCode,
+          tax_id: taxId,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to update address");
+      }
+
+      await fetchAddressInfo();
+      closeModal();
+    } catch (err) {
+      if (err instanceof Error) {
+        setError(err.message);
+      }
+    } finally {
+      setSaveLoading(false);
+    }
   };
   return (
     <>
@@ -28,31 +92,52 @@ export default function UserAddressCard() {
               <div className="grid grid-cols-1 gap-x-6 gap-y-5 lg:grid-cols-2">
                 <div>
                   <Label>Country</Label>
-                  <Input type="text" value="United States" />
+                  <Input
+                    type="text"
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
+                  />
                 </div>
 
                 <div>
                   <Label>City/State</Label>
-                  <Input type="text" value="Arizona, United States." />
+                  <Input
+                    type="text"
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                  />
                 </div>
 
                 <div>
                   <Label>Postal Code</Label>
-                  <Input type="text" value="ERT 2489" />
+                  <Input
+                    type="text"
+                    value={postalCode}
+                    onChange={(e) => setPostalCode(e.target.value)}
+                  />
                 </div>
 
                 <div>
                   <Label>TAX ID</Label>
-                  <Input type="text" value="AS4568384" />
+                  <Input
+                    type="text"
+                    value={taxId}
+                    onChange={(e) => setTaxId(e.target.value)}
+                  />
                 </div>
               </div>
+              {error && (
+                <div className="p-3 mt-4 text-sm text-error-500 bg-error-50 rounded-lg">
+                  {error}
+                </div>
+              )}
             </div>
             <div className="flex items-center gap-3 px-2 mt-6 lg:justify-end">
-              <Button size="sm" variant="outline" onClick={closeModal}>
+              <Button size="sm" variant="outline" onClick={closeModal} disabled={saveLoading}>
                 Close
               </Button>
-              <Button size="sm" onClick={handleSave}>
-                Save Changes
+              <Button size="sm" onClick={handleSave} disabled={saveLoading}>
+                {saveLoading ? "Saving..." : "Save Changes"}
               </Button>
             </div>
           </form>
