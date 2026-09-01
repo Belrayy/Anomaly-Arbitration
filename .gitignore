@@ -30,3 +30,4 @@ models/inference/school/__pycache__/
 models/inference/transistor/__pycache__/
 api/database/alembic
 frontend/tree.txt
+reports/5/report_predictions_school_20260901_162757.pdf
