@@ -2,7 +2,9 @@ CREATE TABLE reports (
     id SERIAL PRIMARY KEY,
     user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     filename VARCHAR(255) NOT NULL,
+    file_path TEXT NOT NULL,
     model VARCHAR(100) NOT NULL,
     algorithm VARCHAR(100) NOT NULL,
+    inference_type VARCHAR(100) NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );

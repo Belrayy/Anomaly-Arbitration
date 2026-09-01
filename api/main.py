@@ -889,16 +889,13 @@ async def process_report(
             pdf_content
         )
 
-        model_name, algorithm_code = report_name.rsplit("-", 1)
-
-        algorithm_name = ALGORITHM_NAMES.get(algorithm_code,algorithm_code)
-
         report = Report(
             user_id=current_user.id,
             filename=download_filename,
             file_path=str(saved_path),
-            model=model_name,
-            algorithm=algorithm_name
+            model=report_name,
+            algorithm="report",
+            inference_type="json"
         )
 
         db.add(report)
@@ -958,8 +955,13 @@ async def predict(model_name: str, file: UploadFile = File(...),current_user: Us
 
 
 @app.post("/report/{report_name}")
-async def report(report_name: str, file: UploadFile = File(...),current_user: User = Depends(get_current_user)):
-    return await process_report(report_name, file)
+async def report(
+    report_name: str,
+    file: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    return await process_report(report_name, file, current_user, db)
 
 @app.post("/test-upload")
 async def test_upload(file: UploadFile = File(...)):
@@ -977,60 +979,3 @@ def db_test(db: Session = Depends(get_db)):
         "result": result
     }
 
-@app.get("")
-def get_my_reports(
-    current_user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    reports = (
-        db.query(Report)
-        .filter(Report.user_id == current_user.id)
-        .order_by(Report.created_at.desc())
-        .all()
-    )
-
-    return [
-        {
-            "id": report.id,
-            "filename": report.filename,
-            "model": report.model,
-            "algorithm": report.algorithm,
-            "created_at": report.created_at,
-        }
-        for report in reports
-    ]
-
-@app.get("/{report_id}")
-def download_report(
-    report_id: int,
-    current_user: User = Depends(get_current_user),
-    db: Session = Depends(get_db)
-):
-    report = (
-        db.query(Report)
-        .filter(
-            Report.id == report_id,
-            Report.user_id == current_user.id
-        )
-        .first()
-    )
-
-    if not report:
-        raise HTTPException(
-            status_code=404,
-            detail="Report not found."
-        )
-
-    file_path = Path(report.file_path)
-
-    if not file_path.exists():
-        raise HTTPException(
-            status_code=404,
-            detail="Report file no longer exists."
-        )
-
-    return FileResponse(
-        path=file_path,
-        media_type="application/pdf",
-        filename=report.filename
-    )

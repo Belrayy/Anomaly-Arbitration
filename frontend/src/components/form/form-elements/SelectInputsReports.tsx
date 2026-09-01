@@ -1,20 +1,19 @@
-import { useState } from "react";
 import ComponentCard from "../../common/ComponentCard";
 import Label from "../Label";
 import Select from "../Select";
-import MultiSelect from "../MultiSelect";
 
-export default function SelectInputs() {
+interface SelectInputsReportsProps {
+  value: string;
+  onChange: (value: string) => void;
+}
+
+export default function SelectInputsReports({ value, onChange }: SelectInputsReportsProps) {
   const options = [
     { value: "creditcard", label: "Credit Card" },
     { value: "cyber", label: "Cyber Security" },
     { value: "school", label: "Academic Results" },
     { value: "transistor", label: "Transistor" },
   ];
-  const handleSelectChange = (value: string) => {
-    console.log("Selected value:", value);
-  };
-
   return (
     <ComponentCard title="Inputs Your Data">
       <div className="space-y-6">
@@ -23,8 +22,9 @@ export default function SelectInputs() {
           <Select
             options={options}
             placeholder="Select Option"
-            onChange={handleSelectChange}
+            onChange={onChange}
             className="dark:bg-dark-900"
+            defaultValue={value}
           />
         </div>
       </div>
