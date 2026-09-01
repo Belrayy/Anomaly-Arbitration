@@ -4,23 +4,33 @@ import Label from "../Label";
 import Select from "../Select";
 import MultiSelect from "../MultiSelect";
 
-export default function SelectInputs() {
+interface SelectInputsProps {
+  value: string;
+  onChange: (value: string) => void;
+  selectedModels: string[];
+  onModelsChange: (models: string[]) => void;
+}
+
+export default function SelectInputs({ value, onChange, selectedModels, onModelsChange }: SelectInputsProps) {
   const options = [
     { value: "creditcard", label: "Credit Card" },
     { value: "cyber", label: "Cyber Security" },
     { value: "school", label: "Academic Results" },
     { value: "transistor", label: "Transistor" },
   ];
-  const handleSelectChange = (value: string) => {
-    console.log("Selected value:", value);
+
+  const handleSelectChange = (selectedValue: string) => {
+    onChange(selectedValue);
   };
+
   const [selectedValues, setSelectedValues] = useState<string[]>([]);
 
-  const multiOptions = [
-    { value: "1", text: "Isolation Forest", selected: false },
-    { value: "2", text: "Local Outlier Factor", selected: false },
-    { value: "3", text: "One-Class SVM", selected: false },
+  const models = [
+    { value: "if", text: "Isolation Forest" },
+    { value: "lof", text: "Local Outlier Factor" },
+    { value: "svm", text: "One-Class SVM" },
   ];
+
   return (
     <ComponentCard title="Inputs Your Data">
       <div className="space-y-6">
@@ -31,14 +41,18 @@ export default function SelectInputs() {
             placeholder="Select Option"
             onChange={handleSelectChange}
             className="dark:bg-dark-900"
+            defaultValue={value}
           />
         </div>
         <div>
           <MultiSelect
-            label="Multiple Select Options"
-            options={multiOptions}
-            defaultSelected={["1", "3"]}
-            onChange={(values) => setSelectedValues(values)}
+            label="Select Models"
+            options={models}
+            defaultSelected={[]}
+            onChange={(values) => {
+              setSelectedValues(values);
+              onModelsChange(values);
+            }}
           />
           <p className="sr-only">
             Selected Values: {selectedValues.join(", ")}

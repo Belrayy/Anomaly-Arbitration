@@ -1,11 +1,14 @@
 import ComponentCard from "../../common/ComponentCard";
 import { useDropzone } from "react-dropzone";
-// import Dropzone from "react-dropzone";
 
-const DropzoneComponent: React.FC = () => {
+interface DropzoneComponentProps {
+  onFileSelected?: (file: File | null) => void;
+}
+
+const DropzoneComponent: React.FC<DropzoneComponentProps> = ({ onFileSelected }) => {
   const onDrop = (acceptedFiles: File[]) => {
-    console.log("Files dropped:", acceptedFiles);
-    // Handle file uploads here
+    const file = acceptedFiles[0] ?? null;
+    onFileSelected?.(file);
   };
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -13,13 +16,15 @@ const DropzoneComponent: React.FC = () => {
     accept: {
       "text/csv": [".csv"],
     },
+    multiple: false,
   });
+
   return (
     <ComponentCard title="Dropzone">
       <div className="transition border border-gray-300 border-dashed cursor-pointer dark:hover:border-brand-500 dark:border-gray-700 rounded-xl hover:border-brand-500">
         <form
           {...getRootProps()}
-          className={`dropzone rounded-xl   border-dashed border-gray-300 p-7 lg:p-10
+          className={`dropzone rounded-xl border-dashed border-gray-300 p-7 lg:p-10
         ${
           isDragActive
             ? "border-brand-500 bg-gray-100 dark:bg-gray-800"
@@ -28,13 +33,11 @@ const DropzoneComponent: React.FC = () => {
       `}
           id="demo-upload"
         >
-          {/* Hidden Input */}
           <input {...getInputProps()} />
 
           <div className="dz-message flex flex-col items-center m-0!">
-            {/* Icon Container */}
             <div className="mb-[22px] flex justify-center">
-              <div className="flex h-[68px] w-[68px]  items-center justify-center rounded-full bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-400">
+              <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full bg-gray-200 text-gray-700 dark:bg-gray-800 dark:text-gray-400">
                 <svg
                   className="fill-current"
                   width="29"
@@ -51,12 +54,11 @@ const DropzoneComponent: React.FC = () => {
               </div>
             </div>
 
-            {/* Text Content */}
             <h4 className="mb-3 font-semibold text-gray-800 text-theme-xl dark:text-white/90">
               {isDragActive ? "Drop Files Here" : "Drag & Drop Files Here"}
             </h4>
 
-            <span className=" text-center mb-5 block w-full max-w-[290px] text-sm text-gray-700 dark:text-gray-400">
+            <span className="text-center mb-5 block w-full max-w-[290px] text-sm text-gray-700 dark:text-gray-400">
               Drag and drop your CSV file here or browse
             </span>
 

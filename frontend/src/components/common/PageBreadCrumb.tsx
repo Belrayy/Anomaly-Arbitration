@@ -13,7 +13,7 @@ const PageBreadcrumb: React.FC<BreadcrumbProps> = ({ pageTitle }) => {
       >
         {pageTitle}
       </h2>
-      <nav>
+      {/* <nav>
         <ol className="flex items-center gap-1.5">
           <li>
             <Link
@@ -43,7 +43,7 @@ const PageBreadcrumb: React.FC<BreadcrumbProps> = ({ pageTitle }) => {
             {pageTitle}
           </li>
         </ol>
-      </nav>
+      </nav> */}
     </div>
   );
 };
